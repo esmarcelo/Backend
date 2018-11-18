@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.LineItems">
+		<id name="litem_id" column="lITEM_ID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="litem_qty" type="org.hibernate.type.IntergerType" column="LITEM_QTY"></property>
+		<many-to-one name="order_id" column="ORDER_ID" class="com.grocerygogetters.model.Orders"></many-to-one>
+		<many-to-one name="product_id" column="PRODUCT_ID" class="com.grocerygogetters.model.products"></many-to-one>
+		
+		<property name="order_submitted" type="org.hibernate.type.DateType" column="ORDER_SUBMITTED"></property>
+		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<property name="order_amount" type="org.hibernate.type.DoubleType" column="ORDER_AMOUNT"></property>
+		<many-to-one name="driver_id" column="DRIVER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<property name="order_status" type="org.hibernate.type.StringType" column="ORDER_STATUS"></property>				
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.Products">
+		<id name="product_id" column="product_id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="product_price" type="org.hibernate.type.DoubleType" column="PRODUCT_PRICE"></property>
+		<property name="product_addeddate" type="org.hibernate.type.DateType" column="PRODUCT_ADDEDDATE"></property>
+		<many-to-one name="comp_id" column="COMP_ID" class="com.grocerygogetters.model.Companies"></many-to-one>
+		<property name="product_stock" type="org.hibernate.type.IntergerType" column="PRODUCT_STOCK"></property>				
+	</class>
+
+</hibernate-mapping>

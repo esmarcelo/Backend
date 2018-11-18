@@ -1,0 +1,13 @@
+package com.grocerygogetters.model;
+
+import java.util.Date;
+
+public class Orders {
+	private int order_id;
+	private Date order_created;
+	private Date order_submitted;
+	private int user_id;
+	private double order_amount;
+	private int driver_id;
+	private String order_status;
+}

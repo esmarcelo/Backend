@@ -1,0 +1,120 @@
+package com.grocerygogetters.model;
+
+import java.util.Date;
+
+public class Events {
+	private int event_id;
+	private int user_id;
+	private int recur_id;
+	private Date event_createddate;
+	private Date event_nextdate;
+	private int cart_id;
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Events other = (Events) obj;
+		if (cart_id != other.cart_id)
+			return false;
+		if (event_createddate == null) {
+			if (other.event_createddate != null)
+				return false;
+		} else if (!event_createddate.equals(other.event_createddate))
+			return false;
+		if (event_id != other.event_id)
+			return false;
+		if (event_nextdate == null) {
+			if (other.event_nextdate != null)
+				return false;
+		} else if (!event_nextdate.equals(other.event_nextdate))
+			return false;
+		if (recur_id != other.recur_id)
+			return false;
+		if (user_id != other.user_id)
+			return false;
+		return true;
+	}
+	@Override
+	protected void finalize() throws Throwable {
+		// TODO Auto-generated method stub
+		super.finalize();
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + cart_id;
+		result = prime * result + ((event_createddate == null) ? 0 : event_createddate.hashCode());
+		result = prime * result + event_id;
+		result = prime * result + ((event_nextdate == null) ? 0 : event_nextdate.hashCode());
+		result = prime * result + recur_id;
+		result = prime * result + user_id;
+		return result;
+	}
+	@Override
+	public String toString() {
+		return "Events [event_id=" + event_id + ", user_id=" + user_id + ", recur_id=" + recur_id
+				+ ", event_createddate=" + event_createddate + ", event_nextdate=" + event_nextdate + ", cart_id="
+				+ cart_id + "]";
+	}
+	public int getEvent_id() {
+		return event_id;
+	}
+	public void setEvent_id(int event_id) {
+		this.event_id = event_id;
+	}
+	public int getUser_id() {
+		return user_id;
+	}
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
+	}
+	public int getRecur_id() {
+		return recur_id;
+	}
+	public void setRecur_id(int recur_id) {
+		this.recur_id = recur_id;
+	}
+	public Date getEvent_createddate() {
+		return event_createddate;
+	}
+	public void setEvent_createddate(Date event_createddate) {
+		this.event_createddate = event_createddate;
+	}
+	public Date getEvent_nextdate() {
+		return event_nextdate;
+	}
+	public void setEvent_nextdate(Date event_nextdate) {
+		this.event_nextdate = event_nextdate;
+	}
+	public int getCart_id() {
+		return cart_id;
+	}
+	public void setCart_id(int cart_id) {
+		this.cart_id = cart_id;
+	}
+	public Events(int event_id, int user_id, int recur_id, Date event_createddate, Date event_nextdate, int cart_id) {
+		super();
+		this.event_id = event_id;
+		this.user_id = user_id;
+		this.recur_id = recur_id;
+		this.event_createddate = event_createddate;
+		this.event_nextdate = event_nextdate;
+		this.cart_id = cart_id;
+	}
+	public Events() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

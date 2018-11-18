@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@revaturedb.c6jwc3fdxmfm.us-east-2.rds.amazonaws.com:1521:ORCL</property>
+		<property name="hibernate.connection.username">GGGDB</property>
+		<property name="hibernate.connection.password">password</property>
+		
+		<property name="dialect">org.hibernate.dialect.Oracle12cDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">true</property>
+		
+		<mapping resource="mapping/Users.hbm.xml"/>
+		<mapping resource="mapping/ShoppingCart.hbm.xml"/>
+		<mapping resource="mapping/Role.hbm.xml"/>
+		<mapping resource="mapping/Recurrence.hbm.xml"/>
+		<mapping resource="mapping/Product.hbm.xml"/>
+		<mapping resource="mapping/Orders.hbm.xml"/>
+		<mapping resource="mapping/LineItems.hbm.xml"/>
+		<mapping resource="mapping/Events.hbm.xml"/>
+		<mapping resource="mapping/Companies.hbm.xml"/>
+		
+	</session-factory>
+</hibernate-configuration>

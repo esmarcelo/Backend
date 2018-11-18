@@ -1,0 +1,10 @@
+package com.grocerygogetters.model;
+
+public class LineItems {
+	private int litem_id;
+	private int litem_qty;
+	private int order_id;
+	private int product_id;
+	private int cart_id;
+
+}

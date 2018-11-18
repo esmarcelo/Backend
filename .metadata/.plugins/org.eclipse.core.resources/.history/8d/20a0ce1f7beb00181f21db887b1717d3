@@ -1,0 +1,12 @@
+package com.grocerygogetters.model;
+
+import java.util.Date;
+
+public class Products {
+	private int product_id;
+	private double product_price;
+	private Date product_addeddate;
+	private int comp_id;
+	private int product_stock;
+
+}

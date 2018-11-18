@@ -1,0 +1,12 @@
+package com.grocerygogetters.model;
+
+import java.util.Date;
+
+public class Events {
+	private int event_id;
+	private int user_id;
+	private int recur_id;
+	private Date event_createddate;
+	private Date event_nextdate;
+	private int cart_id;
+}

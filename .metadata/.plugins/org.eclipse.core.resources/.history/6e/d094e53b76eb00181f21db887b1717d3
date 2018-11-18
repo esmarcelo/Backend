@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.Users">
+		<id name="user_id" column="USER_ID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="user_fname" type="org.hibernate.type.StringType" column="USER_FNAME"></property>
+		<property name="user_Lname" type="org.hibernate.type.StringType" column="USER_LNAME"></property>
+		<property name="user_username" type="org.hibernate.type.StringType" column="USER_USERNAME"></property>
+		<property name="user_email" type="org.hibernate.type.StringType" column="USER_EMAIL"></property>
+		<property name="user_password" type="org.hibernate.type.StringType" column="USER_PASSWORD"></property>
+		<many-to-one name="comp_id" column="COMP_ID" class="com.grocerygogetters.model.Companies"></many-to-one>
+		<property name="user_points" type="org.hibernate.type.IntegerType" column="USER_POINTS"></property>
+		<property name="user_address" type="org.hibernate.type.StringType" column="USER_ADDRESS"></property>
+		<property name="user_city" type="org.hibernate.type.StringType" column="USER_CITY"></property>
+		<property name="user_zipcode" type="org.hibernate.type.StringType" column="USER_ZIPCODE"></property>
+		<many-to-one name="role_id" column="ROLE_ID" class="com.grocerygogetters.model.Role"></many-to-one>		
+	</class>
+
+</hibernate-mapping>

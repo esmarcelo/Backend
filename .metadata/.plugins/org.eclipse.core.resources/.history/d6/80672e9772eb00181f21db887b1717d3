@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.ShoppingCart">
+		<id name="cart_id" column="CART_ID">
+			<generator class="increment"></generator>
+		</id>
+		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<property name="cart_created_date" type="org.hibernate.type.DateType" column="CART_CREATED_DATE"></property>
+		<many-to-one name="order_id" column="ORDER_ID" class="com.grocerygogetters.model.Orders"></many-to-one>
+		<property name="cart_name" type="org.hibernate.type.StringType" column="CART_NAME"></property>
+		<property name="cart_status" type="org.hibernate.type.StringType" column="CART_STATUS"></property>
+		
+		
+		
+		<many-to-one name="role_id" column="ROLE_ID" class="com.grocerygogetters.model.Role"></many-to-one>		
+	</class>
+
+</hibernate-mapping>

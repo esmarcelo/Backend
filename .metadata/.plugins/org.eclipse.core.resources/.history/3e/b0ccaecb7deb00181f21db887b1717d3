@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.LineItems" table="LineItems">
+		<id name="litem_id" column="lITEM_ID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="litem_qty" type="org.hibernate.type.IntergerType" column="LITEM_QTY"></property>
+		<many-to-one name="order_id" column="ORDER_ID" class="com.grocerygogetters.model.Orders"></many-to-one>
+		<many-to-one name="product_id" column="PRODUCT_ID" class="com.grocerygogetters.model.Products"></many-to-one>
+		<many-to-one name="cart_id" column="CART_ID" class="com.grocerygogetters.model.ShoppingCart"></many-to-one>
+						
+	</class>
+
+</hibernate-mapping>
