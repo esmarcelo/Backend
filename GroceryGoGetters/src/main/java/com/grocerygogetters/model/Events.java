@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Events {
 	private int event_id;
-	private int user_id;
-	private int recur_id;
+	private Users user_id;
+	private Recurrence recur_id;
 	private Date event_createddate;
 	private Date event_nextdate;
-	private int cart_id;
+	private ShoppingCart cart_id;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -23,7 +23,10 @@ public class Events {
 		if (getClass() != obj.getClass())
 			return false;
 		Events other = (Events) obj;
-		if (cart_id != other.cart_id)
+		if (cart_id == null) {
+			if (other.cart_id != null)
+				return false;
+		} else if (!cart_id.equals(other.cart_id))
 			return false;
 		if (event_createddate == null) {
 			if (other.event_createddate != null)
@@ -37,9 +40,15 @@ public class Events {
 				return false;
 		} else if (!event_nextdate.equals(other.event_nextdate))
 			return false;
-		if (recur_id != other.recur_id)
+		if (recur_id == null) {
+			if (other.recur_id != null)
+				return false;
+		} else if (!recur_id.equals(other.recur_id))
 			return false;
-		if (user_id != other.user_id)
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
 			return false;
 		return true;
 	}
@@ -52,12 +61,12 @@ public class Events {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + cart_id;
+		result = prime * result + ((cart_id == null) ? 0 : cart_id.hashCode());
 		result = prime * result + ((event_createddate == null) ? 0 : event_createddate.hashCode());
 		result = prime * result + event_id;
 		result = prime * result + ((event_nextdate == null) ? 0 : event_nextdate.hashCode());
-		result = prime * result + recur_id;
-		result = prime * result + user_id;
+		result = prime * result + ((recur_id == null) ? 0 : recur_id.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
 	}
 	@Override
@@ -72,16 +81,16 @@ public class Events {
 	public void setEvent_id(int event_id) {
 		this.event_id = event_id;
 	}
-	public int getUser_id() {
+	public Users getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(int user_id) {
+	public void setUser_id(Users user_id) {
 		this.user_id = user_id;
 	}
-	public int getRecur_id() {
+	public Recurrence getRecur_id() {
 		return recur_id;
 	}
-	public void setRecur_id(int recur_id) {
+	public void setRecur_id(Recurrence recur_id) {
 		this.recur_id = recur_id;
 	}
 	public Date getEvent_createddate() {
@@ -96,13 +105,14 @@ public class Events {
 	public void setEvent_nextdate(Date event_nextdate) {
 		this.event_nextdate = event_nextdate;
 	}
-	public int getCart_id() {
+	public ShoppingCart getCart_id() {
 		return cart_id;
 	}
-	public void setCart_id(int cart_id) {
+	public void setCart_id(ShoppingCart cart_id) {
 		this.cart_id = cart_id;
 	}
-	public Events(int event_id, int user_id, int recur_id, Date event_createddate, Date event_nextdate, int cart_id) {
+	public Events(int event_id, Users user_id, Recurrence recur_id, Date event_createddate, Date event_nextdate,
+			ShoppingCart cart_id) {
 		super();
 		this.event_id = event_id;
 		this.user_id = user_id;
@@ -115,6 +125,6 @@ public class Events {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+		
 	
 }

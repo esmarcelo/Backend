@@ -1,0 +1,36 @@
+package com.grocerygogetters.util;
+
+import com.grocerygogetters.dao.UsersDao;
+import com.grocerygogetters.dao.UsersDaoImpl;
+import com.grocerygogetters.model.Companies;
+import com.grocerygogetters.model.Users;
+
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+//		Session s = HibernateUtil.getSession();
+//		s.close();
+
+		
+		UsersDao user = new UsersDaoImpl();
+//		Users u = new Users();
+//		u.setUser_fname("John");
+//		u.setUser_lname("Smith");
+//		u.setUser_email("jsmith@email.com");
+//		u.setUser_password("1234");
+//		u.setUser_username("jsmith");
+//		u.setComp_id(null);
+//		
+//		user.createUser(u);
+		
+		user.getUsers();
+
+
+		
+
+
+	}
+
+}

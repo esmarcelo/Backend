@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class ShoppingCart {
 	private int cart_id;
-	private int user_id;
+	private Users user_id;
 	private Date cart_created_date;
-	private int order_id;
+	private Orders order_id;
 	private String cart_name;
 	private String cart_status;
 	@Override
@@ -40,9 +40,15 @@ public class ShoppingCart {
 				return false;
 		} else if (!cart_status.equals(other.cart_status))
 			return false;
-		if (order_id != other.order_id)
+		if (order_id == null) {
+			if (other.order_id != null)
+				return false;
+		} else if (!order_id.equals(other.order_id))
 			return false;
-		if (user_id != other.user_id)
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
 			return false;
 		return true;
 	}
@@ -59,8 +65,8 @@ public class ShoppingCart {
 		result = prime * result + cart_id;
 		result = prime * result + ((cart_name == null) ? 0 : cart_name.hashCode());
 		result = prime * result + ((cart_status == null) ? 0 : cart_status.hashCode());
-		result = prime * result + order_id;
-		result = prime * result + user_id;
+		result = prime * result + ((order_id == null) ? 0 : order_id.hashCode());
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
 	}
 	@Override
@@ -74,10 +80,10 @@ public class ShoppingCart {
 	public void setCart_id(int cart_id) {
 		this.cart_id = cart_id;
 	}
-	public int getUser_id() {
+	public Users getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(int user_id) {
+	public void setUser_id(Users user_id) {
 		this.user_id = user_id;
 	}
 	public Date getCart_created_date() {
@@ -86,10 +92,10 @@ public class ShoppingCart {
 	public void setCart_created_date(Date cart_created_date) {
 		this.cart_created_date = cart_created_date;
 	}
-	public int getOrder_id() {
+	public Orders getOrder_id() {
 		return order_id;
 	}
-	public void setOrder_id(int order_id) {
+	public void setOrder_id(Orders order_id) {
 		this.order_id = order_id;
 	}
 	public String getCart_name() {
@@ -104,7 +110,7 @@ public class ShoppingCart {
 	public void setCart_status(String cart_status) {
 		this.cart_status = cart_status;
 	}
-	public ShoppingCart(int cart_id, int user_id, Date cart_created_date, int order_id, String cart_name,
+	public ShoppingCart(int cart_id, Users user_id, Date cart_created_date, Orders order_id, String cart_name,
 			String cart_status) {
 		super();
 		this.cart_id = cart_id;
@@ -118,6 +124,6 @@ public class ShoppingCart {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+		
 
 }

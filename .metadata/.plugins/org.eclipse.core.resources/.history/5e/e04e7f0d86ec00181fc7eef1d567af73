@@ -1,0 +1,18 @@
+package com.grocerygogetters.model;
+
+public class Users {
+	private int user_id;
+	private String user_fname;
+	private String user_lname;
+	private String user_username;
+	private String user_email;
+	private String user_password;
+	private Companies comp_id;
+	private int user_points;
+	private String user_address;
+	private String user_city;
+	private String user_zipcode;
+	private Role role_id;
+	
+
+}

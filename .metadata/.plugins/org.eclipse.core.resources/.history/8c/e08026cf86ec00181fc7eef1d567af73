@@ -1,0 +1,14 @@
+package com.grocerygogetters.model;
+
+import java.util.Date;
+
+public class ShoppingCart {
+	private int cart_id;
+	private Users user_id;
+	private Date cart_created_date;
+	private Orders order_id;
+	private String cart_name;
+	private String cart_status;
+		
+
+}

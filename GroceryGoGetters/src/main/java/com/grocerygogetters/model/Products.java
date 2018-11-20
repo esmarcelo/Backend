@@ -6,7 +6,7 @@ public class Products {
 	private int product_id;
 	private double product_price;
 	private Date product_addeddate;
-	private int comp_id;
+	private Companies comp_id;
 	private int product_stock;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
@@ -22,7 +22,10 @@ public class Products {
 		if (getClass() != obj.getClass())
 			return false;
 		Products other = (Products) obj;
-		if (comp_id != other.comp_id)
+		if (comp_id == null) {
+			if (other.comp_id != null)
+				return false;
+		} else if (!comp_id.equals(other.comp_id))
 			return false;
 		if (product_addeddate == null) {
 			if (other.product_addeddate != null)
@@ -46,7 +49,7 @@ public class Products {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + comp_id;
+		result = prime * result + ((comp_id == null) ? 0 : comp_id.hashCode());
 		result = prime * result + ((product_addeddate == null) ? 0 : product_addeddate.hashCode());
 		result = prime * result + product_id;
 		long temp;
@@ -78,10 +81,10 @@ public class Products {
 	public void setProduct_addeddate(Date product_addeddate) {
 		this.product_addeddate = product_addeddate;
 	}
-	public int getComp_id() {
+	public Companies getComp_id() {
 		return comp_id;
 	}
-	public void setComp_id(int comp_id) {
+	public void setComp_id(Companies comp_id) {
 		this.comp_id = comp_id;
 	}
 	public int getProduct_stock() {
@@ -90,7 +93,8 @@ public class Products {
 	public void setProduct_stock(int product_stock) {
 		this.product_stock = product_stock;
 	}
-	public Products(int product_id, double product_price, Date product_addeddate, int comp_id, int product_stock) {
+	public Products(int product_id, double product_price, Date product_addeddate, Companies comp_id,
+			int product_stock) {
 		super();
 		this.product_id = product_id;
 		this.product_price = product_price;
@@ -103,5 +107,4 @@ public class Products {
 		// TODO Auto-generated constructor stub
 	}
 	
-
 }

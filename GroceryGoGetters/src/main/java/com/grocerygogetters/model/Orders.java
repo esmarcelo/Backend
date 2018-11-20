@@ -6,9 +6,9 @@ public class Orders {
 	private int order_id;
 	private Date order_created;
 	private Date order_submitted;
-	private int user_id;
+	private Users user_id;
 	private double order_amount;
-	private int driver_id;
+	private Users driver_id;
 	private String order_status;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
@@ -24,7 +24,10 @@ public class Orders {
 		if (getClass() != obj.getClass())
 			return false;
 		Orders other = (Orders) obj;
-		if (driver_id != other.driver_id)
+		if (driver_id == null) {
+			if (other.driver_id != null)
+				return false;
+		} else if (!driver_id.equals(other.driver_id))
 			return false;
 		if (Double.doubleToLongBits(order_amount) != Double.doubleToLongBits(other.order_amount))
 			return false;
@@ -45,7 +48,10 @@ public class Orders {
 				return false;
 		} else if (!order_submitted.equals(other.order_submitted))
 			return false;
-		if (user_id != other.user_id)
+		if (user_id == null) {
+			if (other.user_id != null)
+				return false;
+		} else if (!user_id.equals(other.user_id))
 			return false;
 		return true;
 	}
@@ -58,7 +64,7 @@ public class Orders {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + driver_id;
+		result = prime * result + ((driver_id == null) ? 0 : driver_id.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(order_amount);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -66,7 +72,7 @@ public class Orders {
 		result = prime * result + order_id;
 		result = prime * result + ((order_status == null) ? 0 : order_status.hashCode());
 		result = prime * result + ((order_submitted == null) ? 0 : order_submitted.hashCode());
-		result = prime * result + user_id;
+		result = prime * result + ((user_id == null) ? 0 : user_id.hashCode());
 		return result;
 	}
 	@Override
@@ -93,10 +99,10 @@ public class Orders {
 	public void setOrder_submitted(Date order_submitted) {
 		this.order_submitted = order_submitted;
 	}
-	public int getUser_id() {
+	public Users getUser_id() {
 		return user_id;
 	}
-	public void setUser_id(int user_id) {
+	public void setUser_id(Users user_id) {
 		this.user_id = user_id;
 	}
 	public double getOrder_amount() {
@@ -105,10 +111,10 @@ public class Orders {
 	public void setOrder_amount(double order_amount) {
 		this.order_amount = order_amount;
 	}
-	public int getDriver_id() {
+	public Users getDriver_id() {
 		return driver_id;
 	}
-	public void setDriver_id(int driver_id) {
+	public void setDriver_id(Users driver_id) {
 		this.driver_id = driver_id;
 	}
 	public String getOrder_status() {
@@ -117,8 +123,8 @@ public class Orders {
 	public void setOrder_status(String order_status) {
 		this.order_status = order_status;
 	}
-	public Orders(int order_id, Date order_created, Date order_submitted, int user_id, double order_amount,
-			int driver_id, String order_status) {
+	public Orders(int order_id, Date order_created, Date order_submitted, Users user_id, double order_amount,
+			Users driver_id, String order_status) {
 		super();
 		this.order_id = order_id;
 		this.order_created = order_created;
@@ -132,6 +138,5 @@ public class Orders {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	
+		
 }

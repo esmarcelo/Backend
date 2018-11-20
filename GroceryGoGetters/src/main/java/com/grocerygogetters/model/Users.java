@@ -7,12 +7,12 @@ public class Users {
 	private String user_username;
 	private String user_email;
 	private String user_password;
-	private int comp_id;
+	private Companies comp_id;
 	private int user_points;
 	private String user_address;
 	private String user_city;
 	private String user_zipcode;
-	private int role_id;
+	private Role role_id;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -27,9 +27,15 @@ public class Users {
 		if (getClass() != obj.getClass())
 			return false;
 		Users other = (Users) obj;
-		if (comp_id != other.comp_id)
+		if (comp_id == null) {
+			if (other.comp_id != null)
+				return false;
+		} else if (!comp_id.equals(other.comp_id))
 			return false;
-		if (role_id != other.role_id)
+		if (role_id == null) {
+			if (other.role_id != null)
+				return false;
+		} else if (!role_id.equals(other.role_id))
 			return false;
 		if (user_address == null) {
 			if (other.user_address != null)
@@ -86,8 +92,8 @@ public class Users {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + comp_id;
-		result = prime * result + role_id;
+		result = prime * result + ((comp_id == null) ? 0 : comp_id.hashCode());
+		result = prime * result + ((role_id == null) ? 0 : role_id.hashCode());
 		result = prime * result + ((user_address == null) ? 0 : user_address.hashCode());
 		result = prime * result + ((user_city == null) ? 0 : user_city.hashCode());
 		result = prime * result + ((user_email == null) ? 0 : user_email.hashCode());
@@ -143,10 +149,10 @@ public class Users {
 	public void setUser_password(String user_password) {
 		this.user_password = user_password;
 	}
-	public int getComp_id() {
+	public Companies getComp_id() {
 		return comp_id;
 	}
-	public void setComp_id(int comp_id) {
+	public void setComp_id(Companies comp_id) {
 		this.comp_id = comp_id;
 	}
 	public int getUser_points() {
@@ -173,15 +179,15 @@ public class Users {
 	public void setUser_zipcode(String user_zipcode) {
 		this.user_zipcode = user_zipcode;
 	}
-	public int getRole_id() {
+	public Role getRole_id() {
 		return role_id;
 	}
-	public void setRole_id(int role_id) {
+	public void setRole_id(Role role_id) {
 		this.role_id = role_id;
 	}
 	public Users(int user_id, String user_fname, String user_lname, String user_username, String user_email,
-			String user_password, int comp_id, int user_points, String user_address, String user_city,
-			String user_zipcode, int role_id) {
+			String user_password, Companies comp_id, int user_points, String user_address, String user_city,
+			String user_zipcode, Role role_id) {
 		super();
 		this.user_id = user_id;
 		this.user_fname = user_fname;
@@ -200,6 +206,6 @@ public class Users {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-		
+	
 
 }

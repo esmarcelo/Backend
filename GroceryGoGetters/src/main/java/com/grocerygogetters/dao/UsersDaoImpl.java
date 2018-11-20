@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import com.grocerygogetters.model.Orders;
 import com.grocerygogetters.model.ShoppingCart;
@@ -29,23 +30,33 @@ public class UsersDaoImpl implements UsersDao{
 	}
 
 	public Users getUserById(Users u) {
-		// TODO Auto-generated method stub
-		return null;
+		Session s = HibernateUtil.getSession();
+		Users usr = s.load(Users.class, u.getUser_id());
+		//System.out.println(usr);
+		s.close();
+		return usr;
 	}
 
-	public ShoppingCart getUsersCart(Users u) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public List<ShoppingCart> getUsersCartById(ShoppingCart sc) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<ShoppingCart> getUsersCart(Users u) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from ShoppingCart where USER_ID = :UID";
+		Query<ShoppingCart> scq = s.createQuery(hql,ShoppingCart.class);
+		scq.setParameter("UID",u.getUser_id());
+		List<ShoppingCart> sc = scq.list();
+		System.out.println(sc);
+		s.close();
+		return sc;
 	}
 
 	public List<Orders> getUserOrders(Users u) {
-		// TODO Auto-generated method stub
-		return null;
+		Session s = HibernateUtil.getSession();
+		String hql = "from Orders where USER_ID = :UID";
+		Query<Orders> scq = s.createQuery(hql,Orders.class);
+		scq.setParameter("UID",u.getUser_id());
+		List<Orders> sc = scq.list();
+		System.out.println(sc);
+		s.close();
+		return sc;
 	}
 
 

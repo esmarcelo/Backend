@@ -3,9 +3,9 @@ package com.grocerygogetters.model;
 public class LineItems {
 	private int litem_id;
 	private int litem_qty;
-	private int order_id;
-	private int product_id;
-	private int cart_id;
+	private Orders order_id;
+	private Products product_id;
+	private ShoppingCart cart_id;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -20,15 +20,24 @@ public class LineItems {
 		if (getClass() != obj.getClass())
 			return false;
 		LineItems other = (LineItems) obj;
-		if (cart_id != other.cart_id)
+		if (cart_id == null) {
+			if (other.cart_id != null)
+				return false;
+		} else if (!cart_id.equals(other.cart_id))
 			return false;
 		if (litem_id != other.litem_id)
 			return false;
 		if (litem_qty != other.litem_qty)
 			return false;
-		if (order_id != other.order_id)
+		if (order_id == null) {
+			if (other.order_id != null)
+				return false;
+		} else if (!order_id.equals(other.order_id))
 			return false;
-		if (product_id != other.product_id)
+		if (product_id == null) {
+			if (other.product_id != null)
+				return false;
+		} else if (!product_id.equals(other.product_id))
 			return false;
 		return true;
 	}
@@ -41,11 +50,11 @@ public class LineItems {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + cart_id;
+		result = prime * result + ((cart_id == null) ? 0 : cart_id.hashCode());
 		result = prime * result + litem_id;
 		result = prime * result + litem_qty;
-		result = prime * result + order_id;
-		result = prime * result + product_id;
+		result = prime * result + ((order_id == null) ? 0 : order_id.hashCode());
+		result = prime * result + ((product_id == null) ? 0 : product_id.hashCode());
 		return result;
 	}
 	@Override
@@ -65,25 +74,25 @@ public class LineItems {
 	public void setLitem_qty(int litem_qty) {
 		this.litem_qty = litem_qty;
 	}
-	public int getOrder_id() {
+	public Orders getOrder_id() {
 		return order_id;
 	}
-	public void setOrder_id(int order_id) {
+	public void setOrder_id(Orders order_id) {
 		this.order_id = order_id;
 	}
-	public int getProduct_id() {
+	public Products getProduct_id() {
 		return product_id;
 	}
-	public void setProduct_id(int product_id) {
+	public void setProduct_id(Products product_id) {
 		this.product_id = product_id;
 	}
-	public int getCart_id() {
+	public ShoppingCart getCart_id() {
 		return cart_id;
 	}
-	public void setCart_id(int cart_id) {
+	public void setCart_id(ShoppingCart cart_id) {
 		this.cart_id = cart_id;
 	}
-	public LineItems(int litem_id, int litem_qty, int order_id, int product_id, int cart_id) {
+	public LineItems(int litem_id, int litem_qty, Orders order_id, Products product_id, ShoppingCart cart_id) {
 		super();
 		this.litem_id = litem_id;
 		this.litem_qty = litem_qty;
@@ -95,6 +104,6 @@ public class LineItems {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+		
 
 }

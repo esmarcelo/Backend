@@ -10,8 +10,7 @@ public interface UsersDao {
 	public int createUser(Users u);
 	public List<Users> getUsers();
 	public Users getUserById(Users u);
-	public ShoppingCart getUsersCart(Users u);
-	public List<ShoppingCart> getUsersCartById(ShoppingCart sc);
+	public List<ShoppingCart> getUsersCart(Users u);
 	public List<Orders> getUserOrders(Users u);
 	
 
