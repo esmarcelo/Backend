@@ -555,3 +555,4 @@
 2018-11-19 23:43:55,219 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
 2018-11-19 23:43:55,220 [Worker-303: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-11-19 23:43:55,221 [Worker-303: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:01:18,125 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

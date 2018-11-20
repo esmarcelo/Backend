@@ -23,6 +23,7 @@
 		<mapping resource="mapping/LineItems.hbm.xml"/>
 		<mapping resource="mapping/Events.hbm.xml"/>
 		<mapping resource="mapping/Companies.hbm.xml"/>
+		<mapping resource="mapping/Feedback.hbm.xml"/>
 		
 	</session-factory>
 </hibernate-configuration>
