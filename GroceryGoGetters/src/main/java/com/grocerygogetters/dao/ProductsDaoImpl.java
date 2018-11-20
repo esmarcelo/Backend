@@ -1,0 +1,60 @@
+package com.grocerygogetters.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.grocerygogetters.model.Products;
+import com.grocerygogetters.util.HibernateUtil;
+
+public class ProductsDaoImpl implements ProductsDao{
+
+	@Override
+	public List<Products> getProducts() {
+		Session s = HibernateUtil.getSession();
+		List<Products> products = s.createQuery("from Products", Products.class).list();
+		s.close();
+		return products;
+	}
+
+	@Override
+	public Products getProductById(int id) {
+		// TODO Auto-generated method stub
+		Session s = HibernateUtil.getSession();
+		Products p = s.load(Products.class, id);
+		s.close();
+		return p;
+	}
+
+	@Override
+	public int createProduct(Products p) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		int productsPK = (int) s.save(p);
+		tx.commit();
+		s.close();
+		return productsPK;
+	}
+
+	@Override
+	public void updateProduct(Products p) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		s.update(p);
+		tx.commit();
+		s.close();
+	}
+
+	@Override
+	public void deleteProductById(int id) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		Products p = s.get(Products.class, id);
+		if(p != null) {
+			s.delete(p);
+		}
+		tx.commit();
+		s.close();
+	}
+}
