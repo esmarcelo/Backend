@@ -577,3 +577,200 @@
 2018-11-20 00:08:51,084 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
 2018-11-20 00:08:51,086 [Worker-10: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-11-20 00:08:51,086 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:16:06,343 [Worker-3: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-11-20 00:16:18,178 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:16:18,185 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 12 resources
+2018-11-20 00:16:18,193 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:16:18,194 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:16:30,716 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:16:30,730 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:16:30,732 [Worker-3: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:16:30,733 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:33:43,374 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:33:43,376 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:33:43,378 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:33:43,378 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:34:35,430 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:34:35,431 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:34:35,433 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:34:35,434 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:35:13,252 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:35:13,254 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:35:13,256 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:35:13,256 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:35:30,165 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:35:30,167 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:35:30,168 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:35:30,169 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:36:25,141 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:36:25,142 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:36:25,144 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:36:25,145 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:39:28,490 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:39:28,492 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:39:28,494 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:39:28,495 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:40:00,562 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:40:00,563 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:40:00,565 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:40:00,565 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:40:38,144 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:40:38,146 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:40:38,148 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:40:38,148 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:41:02,653 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:02,655 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:41:02,656 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:02,657 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:41:11,034 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:11,035 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:41:11,037 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:11,038 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:41:41,451 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:41,452 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:41:41,454 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:41:41,455 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:42:14,490 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:42:14,491 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:42:14,493 [Worker-17: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:42:14,494 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:42:28,585 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:42:28,587 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:42:28,588 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:42:28,589 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:43:00,500 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:43:00,501 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:43:00,505 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:43:00,505 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:43:53,877 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:43:53,878 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:43:53,880 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:43:53,881 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:44:31,324 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:44:31,326 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:44:31,327 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:44:31,328 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:45:22,538 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:45:22,540 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:45:22,541 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:45:22,542 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:46:10,782 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:46:10,784 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:46:10,786 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:46:10,786 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:46:26,237 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:46:26,238 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:46:26,239 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:46:26,240 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:47:03,365 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:47:03,366 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:47:03,368 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:47:03,369 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:49:09,870 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:49:09,871 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:49:09,872 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:49:09,873 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:51:29,879 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:51:29,881 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:51:29,882 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:51:29,883 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:51:46,315 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:51:46,317 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:51:46,318 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:51:46,319 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:52:24,325 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:52:24,326 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:52:24,328 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:52:24,328 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:52:37,917 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:52:37,918 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:52:37,919 [Worker-27: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:52:37,920 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:53:28,417 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:53:28,419 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:53:28,420 [Worker-23: Launching Driver] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:53:28,421 [Worker-23: Launching Driver] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:54:03,594 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:54:03,595 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:54:03,596 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:54:03,597 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:54:10,904 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:54:10,906 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:54:10,907 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:54:10,907 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:55:06,630 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:55:06,631 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:55:06,633 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:55:06,633 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 00:55:47,354 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:55:47,356 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 00:55:47,357 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 00:55:47,359 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:08:06,443 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:08:06,445 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:08:06,446 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:08:06,447 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:12:27,529 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:12:27,530 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:12:27,532 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:12:27,532 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:12:48,169 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:12:48,170 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:12:48,171 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:12:48,172 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:13:14,210 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:13:14,211 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:13:14,212 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:13:14,213 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:13:21,162 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:13:21,164 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:13:21,165 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:13:21,166 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:17:26,265 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:17:26,266 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:17:26,267 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:17:26,267 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:18:00,520 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:18:00,521 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:18:00,522 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:18:00,523 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:19:50,485 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:19:50,486 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:19:50,487 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:19:50,488 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:21:02,150 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:02,151 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:21:02,153 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:02,153 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:21:31,852 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:31,854 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:21:31,855 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:31,855 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:21:46,501 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:46,502 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:21:46,504 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:21:46,504 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:25:53,627 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:25:53,628 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:25:53,629 [Worker-32: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:25:53,630 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:26:52,817 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:26:52,818 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:26:52,820 [Worker-38: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:26:52,820 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:28:05,830 [Worker-37: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:05,831 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:28:05,832 [Worker-37: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:05,833 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:28:14,775 [Worker-39: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:14,776 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:28:14,778 [Worker-39: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:14,778 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:28:51,108 [Worker-39: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:51,109 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:28:51,110 [Worker-39: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:28:51,111 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
+2018-11-20 01:30:20,878 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:30:20,880 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 13 resources
+2018-11-20 01:30:20,881 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-11-20 01:30:20,882 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Documents\Java Workspace\Grocery Go Getters\RepoBackEnd\Backend\GroceryGoGetters\src\test\resources
