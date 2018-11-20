@@ -4,7 +4,7 @@
 
 <hibernate-mapping>
 	<class name="com.grocerygogetters.model.Companies" table="Companies">
-		<id name="comp_id" column="comp_id">
+		<id name="comp_id" column="COMP_ID">
 			<generator class="increment"></generator>
 		</id>
 		<property name="comp_name" type="org.hibernate.type.StringType" column="COMP_NAME"></property>

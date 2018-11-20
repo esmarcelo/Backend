@@ -1,0 +1,5 @@
+package com.grocerygogetters.dao;
+
+public class UsersDaoImpl {
+
+}
