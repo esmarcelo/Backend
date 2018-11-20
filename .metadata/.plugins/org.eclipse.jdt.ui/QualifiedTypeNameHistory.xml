@@ -8,4 +8,7 @@
 <fullyQualifiedTypeName name="com.grocerygogetters.model.Users"/>
 <fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDao"/>
 <fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDaoImpl"/>
+<fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.dao.ShoppingCartDaoImpl"/>
 </qualifiedTypeNameHistroy>

@@ -2,11 +2,13 @@ package com.grocerygogetters.util;
 
 import java.sql.Date;
 
+import com.grocerygogetters.dao.OrdersDao;
+import com.grocerygogetters.dao.OrdersDaoImpl;
 import com.grocerygogetters.dao.ShoppingCartDao;
 import com.grocerygogetters.dao.ShoppingCartDaoImpl;
 import com.grocerygogetters.dao.UsersDao;
 import com.grocerygogetters.dao.UsersDaoImpl;
-import com.grocerygogetters.model.ShoppingCart;
+import com.grocerygogetters.model.Orders;
 import com.grocerygogetters.model.Users;
 
 
@@ -20,6 +22,7 @@ public class Driver {
 		
 		UsersDao user = new UsersDaoImpl();
 		ShoppingCartDao scd = new ShoppingCartDaoImpl();
+		OrdersDao od = new OrdersDaoImpl();
 		
 		Users u = new Users();
 		u.setUser_id(1);
@@ -40,13 +43,19 @@ public class Driver {
 //		sc.setCart_status("Pending");
 //		
 //		scd.createShoppingCart(sc);		
-		
-		
-		for(ShoppingCart nsc : user.getUsersCart(u)) {
-			System.out.println(nsc);
-		}
-//		Users nu = user.getUserById(u);
+
+//		Orders o = new Orders();
+//		o.setUser_id(u);
+//		o.setOrder_amount(500);
+//		o.setOrder_status("Pending");
+//		o.setOrder_submitted(Date.valueOf("2018-03-04"));
+//		od.createOrder(o);
 //		
+//		for(Orders nsc : user.getUserOrders(u)) {
+//			System.out.println(nsc);
+//		}
+//		System.out.println( user.getUserById(u));
+		
 //		System.out.println(nu);
 
 		

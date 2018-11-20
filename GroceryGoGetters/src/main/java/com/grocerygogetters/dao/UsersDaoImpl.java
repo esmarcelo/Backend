@@ -32,7 +32,6 @@ public class UsersDaoImpl implements UsersDao{
 	public Users getUserById(Users u) {
 		Session s = HibernateUtil.getSession();
 		Users usr = s.load(Users.class, u.getUser_id());
-		//System.out.println(usr);
 		s.close();
 		return usr;
 	}
@@ -43,7 +42,6 @@ public class UsersDaoImpl implements UsersDao{
 		Query<ShoppingCart> scq = s.createQuery(hql,ShoppingCart.class);
 		scq.setParameter("UID",u.getUser_id());
 		List<ShoppingCart> sc = scq.list();
-		System.out.println(sc);
 		s.close();
 		return sc;
 	}
@@ -54,7 +52,6 @@ public class UsersDaoImpl implements UsersDao{
 		Query<Orders> scq = s.createQuery(hql,Orders.class);
 		scq.setParameter("UID",u.getUser_id());
 		List<Orders> sc = scq.list();
-		System.out.println(sc);
 		s.close();
 		return sc;
 	}

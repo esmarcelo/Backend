@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.Users" table="Users">
+		<id name="user_id" column="USER_ID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="user_fname" type="org.hibernate.type.StringType" column="USER_FNAME" lazy=false></property>
+		<property name="user_lname" type="org.hibernate.type.StringType" column="USER_LNAME" lazy=false></property>
+		<property name="user_username" type="org.hibernate.type.StringType" column="USER_USERNAME" lazy=false></property>
+		<property name="user_email" type="org.hibernate.type.StringType" column="USER_EMAIL" lazy=false></property>
+		<property name="user_password" type="org.hibernate.type.StringType" column="USER_PASSWORD" lazy=false></property>
+		<many-to-one name="comp_id" column="COMP_ID" class="com.grocerygogetters.model.Companies" lazy=false></many-to-one>
+		<property name="user_points" type="org.hibernate.type.IntegerType" column="USER_POINTS" lazy=false></property>
+		<property name="user_address" type="org.hibernate.type.StringType" column="USER_ADDRESS" lazy=false></property>
+		<property name="user_city" type="org.hibernate.type.StringType" column="USER_CITY" lazy=false></property>
+		<property name="user_zipcode" type="org.hibernate.type.StringType" column="USER_ZIPCODE" lazy=false></property>
+		<many-to-one name="role_id" column="ROLE_ID" class="com.grocerygogetters.model.Role" lazy=false></many-to-one>		
+	</class>
+
+</hibernate-mapping>

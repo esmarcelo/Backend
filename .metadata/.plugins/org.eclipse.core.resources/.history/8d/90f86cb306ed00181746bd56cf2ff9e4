@@ -1,0 +1,57 @@
+package com.grocerygogetters.util;
+
+import java.sql.Date;
+
+import com.grocerygogetters.dao.ShoppingCartDao;
+import com.grocerygogetters.dao.ShoppingCartDaoImpl;
+import com.grocerygogetters.dao.UsersDao;
+import com.grocerygogetters.dao.UsersDaoImpl;
+import com.grocerygogetters.model.ShoppingCart;
+import com.grocerygogetters.model.Users;
+
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+//		Session s = HibernateUtil.getSession();
+//		s.close();
+
+		
+		UsersDao user = new UsersDaoImpl();
+		ShoppingCartDao scd = new ShoppingCartDaoImpl();
+		
+		Users u = new Users();
+		u.setUser_id(1);
+		u.setUser_fname("John");
+		u.setUser_lname("Smith");
+		u.setUser_email("jsmith@email.com");
+		u.setUser_password("1234");
+		u.setUser_username("jsmith");
+		u.setComp_id(null);
+		
+//		user.createUser(u);
+		
+//		ShoppingCart sc = new ShoppingCart();
+//		sc.setUser_id(u);
+//		sc.setCart_created_date(Date.valueOf("1999-03-08"));
+//		sc.setOrder_id(null);
+//		sc.setCart_name("user3");
+//		sc.setCart_status("Pending");
+//		
+//		scd.createShoppingCart(sc);		
+		
+		
+//		for(ShoppingCart nsc : user.getUsersCart(u)) {
+//			System.out.println(nsc);
+//		}
+		Users nu = user.getUserById(u);
+		
+		System.out.println(nu);
+
+		
+
+
+	}
+
+}
