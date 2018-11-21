@@ -1,0 +1,23 @@
+package com.grocerygogetters.services;
+
+import com.grocerygogetters.dao.ShoppingCartDaoImpl;
+import com.grocerygogetters.model.ShoppingCart;
+
+public class ShoppingCartServices {
+	private static ShoppingCartServices shoppingCartServices;
+	
+	private ShoppingCartServices() {
+		
+	}
+	
+	public static ShoppingCartServices getInstance() {
+		if(shoppingCartServices == null) {
+			shoppingCartServices = new ShoppingCartServices();
+		}
+		return shoppingCartServices;
+	}
+	
+	public ShoppingCart getShoppingCart(ShoppingCart sc) {
+		return ShoppingCartDaoImpl.getInstance().getShoppingCartById(sc.getCart_id());
+	}
+}

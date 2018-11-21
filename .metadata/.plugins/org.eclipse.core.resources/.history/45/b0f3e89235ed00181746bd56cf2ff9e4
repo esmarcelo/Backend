@@ -1,0 +1,84 @@
+package com.grocerygogetters.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import com.grocerygogetters.model.Companies;
+import com.grocerygogetters.model.LineItems;
+import com.grocerygogetters.model.Products;
+import com.grocerygogetters.model.ShoppingCart;
+import com.grocerygogetters.util.HibernateUtil;
+
+public class ProductsDaoImpl implements ProductsDao{
+
+	@Override
+	public List<Products> getProducts() {
+		Session s = HibernateUtil.getSession();
+		List<Products> products = s.createQuery("from Products", Products.class).list();
+		s.close();
+		return products;
+	}
+
+	@Override
+	public Products getProductById(int id) {
+		// TODO Auto-generated method stub
+		Session s = HibernateUtil.getSession();
+		Products p = s.load(Products.class, id);
+		s.close();
+		return p;
+	}
+
+	@Override
+	public int createProduct(Products p) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		int productsPK = (int) s.save(p);
+		tx.commit();
+		s.close();
+		return productsPK;
+	}
+
+	@Override
+	public void updateProduct(Products p) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		s.update(p);
+		tx.commit();
+		s.close();
+	}
+
+	@Override
+	public void deleteProductById(int id) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		Products p = s.get(Products.class, id);
+		if(p != null) {
+			s.delete(p);
+		}
+		tx.commit();
+		s.close();
+	}
+
+	@Override
+	public List<Products> getProductsByClient(Companies c) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from Products where COMP_ID = :CID";
+		Query<Products> scq = s.createQuery(hql,Products.class);
+		scq.setParameter("CID",c.getComp_id());
+		List<Products> sc = scq.list();
+		s.close();
+		return null;
+	}
+
+	@Override
+	public LineItems CreateProductListItem(Products p, int itemNumber) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		LineItems li = new LineItems();
+		li.setProduct_id(p);
+		return null;
+	}
+}

@@ -1,0 +1,24 @@
+package com.grocerygogetters.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.grocerygogetters.model.Users;
+import com.grocerygogetters.services.UserServices;
+
+@Controller
+public class UsersController {
+
+	@Autowired
+	UserServices userServices;
+	
+	@GetMapping("/users")
+	@ResponseBody
+	public Users getUsers() {
+		Users u = userServices.getUserById(1);
+		System.out.println(u);
+		return u;
+	}
+}

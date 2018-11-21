@@ -1,0 +1,16 @@
+package com.grocerygogetters.services;
+
+public class UsersServices {
+	private static UsersServices userServices;
+	
+	private UsersServices() {
+	}
+	
+	public static UsersServices getInstance() {
+		if (userServices == null) {
+			userServices = new UserServices();
+		}
+		return userServices;
+	}
+
+}

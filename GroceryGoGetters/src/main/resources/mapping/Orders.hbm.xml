@@ -3,15 +3,15 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.grocerygogetters.model.Orders" table="Orders">
+	<class name="com.grocerygogetters.model.Orders" table="Orders" lazy="false">
 		<id name="order_id" column="ORDERS_ID">
 			<generator class="increment"></generator>
 		</id>
 		<property name="order_created" type="org.hibernate.type.DateType" column="ORDER_CREATED"></property>
 		<property name="order_submitted" type="org.hibernate.type.DateType" column="ORDER_SUBMITTED"></property>
-		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users" lazy="false"></many-to-one>
 		<property name="order_amount" type="org.hibernate.type.DoubleType" column="ORDER_AMOUNT"></property>
-		<many-to-one name="driver_id" column="DRIVER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<many-to-one name="driver_id" column="DRIVER_ID" class="com.grocerygogetters.model.Users" lazy="false"></many-to-one>
 		<property name="order_status" type="org.hibernate.type.StringType" column="ORDER_STATUS"></property>				
 	</class>
 

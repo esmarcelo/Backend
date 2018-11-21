@@ -9,6 +9,18 @@ import com.grocerygogetters.model.LineItems;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class LineItemsDaoImpl implements LineItemsDao{
+	
+	private static LineItemsDaoImpl lineItemsDaoImpl;
+	
+	private LineItemsDaoImpl() {
+	}
+	
+	public static LineItemsDaoImpl getInstance() {
+		if (lineItemsDaoImpl == null) {
+			lineItemsDaoImpl = new LineItemsDaoImpl();
+		}
+		return lineItemsDaoImpl;
+	}
 
 	@Override
 	public List<LineItems> getLineItems() {
@@ -57,4 +69,12 @@ public class LineItemsDaoImpl implements LineItemsDao{
 		tx.commit();
 		s.close();
 	}
+
+	@Override
+	public List<LineItems> AddListItemToList(LineItems li, List<LineItems> lst) {
+		lst.add(li);
+		return lst;
+	}
+	
+	
 }

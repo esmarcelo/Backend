@@ -1,0 +1,31 @@
+package com.grocerygogetters.services;
+
+import java.util.List;
+
+import com.grocerygogetters.dao.UsersDaoImpl;
+import com.grocerygogetters.model.Users;
+
+public class UserServices {
+	private static UserServices userServices;
+	
+	private UserServices() {
+	}
+	
+	public static UserServices getInstance() {
+		if (userServices == null) {
+			userServices = new UserServices();
+		}
+		return userServices;
+	}
+	
+	public int creatUser(Users u) {
+		return UsersDaoImpl.getInstance().createUser(u);
+	}
+	
+	public List<Users>  getUsers(){
+		return UsersDaoImpl.getInstance().getUsers();
+	}
+	
+	
+
+}

@@ -9,6 +9,17 @@ import com.grocerygogetters.model.Companies;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class CompaniesDaoImpl implements CompaniesDao {
+	private static CompaniesDaoImpl companiesDaoImpl;
+	
+	private CompaniesDaoImpl() {
+	}
+	
+	public static CompaniesDaoImpl getInstance() {
+		if (companiesDaoImpl == null) {
+			companiesDaoImpl = new CompaniesDaoImpl();
+		}
+		return companiesDaoImpl;
+	}
 
 	@Override
 	public List<Companies> getCompanies() {

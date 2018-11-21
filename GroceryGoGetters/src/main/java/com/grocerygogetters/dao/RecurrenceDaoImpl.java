@@ -9,6 +9,17 @@ import com.grocerygogetters.model.Recurrence;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class RecurrenceDaoImpl implements RecurrenceDao{
+	private static RecurrenceDaoImpl recurrenceDaoImpl;
+	
+	private RecurrenceDaoImpl() {
+	}
+	
+	public static RecurrenceDaoImpl getInstance() {
+		if (recurrenceDaoImpl == null) {
+			recurrenceDaoImpl = new RecurrenceDaoImpl();
+		}
+		return recurrenceDaoImpl;
+	}
 
 	@Override
 	public List<Recurrence> getRecurrences() {

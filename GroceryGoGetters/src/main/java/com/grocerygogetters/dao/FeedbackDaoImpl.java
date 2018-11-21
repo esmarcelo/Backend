@@ -9,6 +9,18 @@ import com.grocerygogetters.model.Feedback;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class FeedbackDaoImpl implements FeedbackDao {
+	
+	private static FeedbackDaoImpl feedbackDaoImpl;
+	
+	private FeedbackDaoImpl() {
+	}
+	
+	public static FeedbackDaoImpl getInstance() {
+		if (feedbackDaoImpl == null) {
+			feedbackDaoImpl = new FeedbackDaoImpl();
+		}
+		return feedbackDaoImpl;
+	}
 
 	@Override
 	public List<Feedback> getFeedbacks() {

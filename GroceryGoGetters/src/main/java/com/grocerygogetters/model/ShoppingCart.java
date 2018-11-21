@@ -1,7 +1,11 @@
 package com.grocerygogetters.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import org.springframework.stereotype.Component;
+@Component
 public class ShoppingCart {
 	private int cart_id;
 	private Users user_id;
@@ -9,6 +13,7 @@ public class ShoppingCart {
 	private Orders order_id;
 	private String cart_name;
 	private String cart_status;
+	private List<LineItems> cart_items = new ArrayList<>();
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -29,6 +34,11 @@ public class ShoppingCart {
 		} else if (!cart_created_date.equals(other.cart_created_date))
 			return false;
 		if (cart_id != other.cart_id)
+			return false;
+		if (cart_items == null) {
+			if (other.cart_items != null)
+				return false;
+		} else if (!cart_items.equals(other.cart_items))
 			return false;
 		if (cart_name == null) {
 			if (other.cart_name != null)
@@ -63,6 +73,7 @@ public class ShoppingCart {
 		int result = 1;
 		result = prime * result + ((cart_created_date == null) ? 0 : cart_created_date.hashCode());
 		result = prime * result + cart_id;
+		result = prime * result + ((cart_items == null) ? 0 : cart_items.hashCode());
 		result = prime * result + ((cart_name == null) ? 0 : cart_name.hashCode());
 		result = prime * result + ((cart_status == null) ? 0 : cart_status.hashCode());
 		result = prime * result + ((order_id == null) ? 0 : order_id.hashCode());
@@ -72,7 +83,8 @@ public class ShoppingCart {
 	@Override
 	public String toString() {
 		return "ShoppingCart [cart_id=" + cart_id + ", user_id=" + user_id + ", cart_created_date=" + cart_created_date
-				+ ", order_id=" + order_id + ", cart_name=" + cart_name + ", cart_status=" + cart_status + "]";
+				+ ", order_id=" + order_id + ", cart_name=" + cart_name + ", cart_status=" + cart_status
+				+ ", cart_items=" + cart_items + "]";
 	}
 	public int getCart_id() {
 		return cart_id;
@@ -110,8 +122,14 @@ public class ShoppingCart {
 	public void setCart_status(String cart_status) {
 		this.cart_status = cart_status;
 	}
+	public List<LineItems> getCart_items() {
+		return cart_items;
+	}
+	public void setCart_items(List<LineItems> cart_items) {
+		this.cart_items = cart_items;
+	}
 	public ShoppingCart(int cart_id, Users user_id, Date cart_created_date, Orders order_id, String cart_name,
-			String cart_status) {
+			String cart_status, List<LineItems> cart_items) {
 		super();
 		this.cart_id = cart_id;
 		this.user_id = user_id;
@@ -119,11 +137,13 @@ public class ShoppingCart {
 		this.order_id = order_id;
 		this.cart_name = cart_name;
 		this.cart_status = cart_status;
+		this.cart_items = cart_items;
 	}
 	public ShoppingCart() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 		
 
 }

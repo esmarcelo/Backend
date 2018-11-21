@@ -4,11 +4,27 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
+import com.grocerygogetters.model.Companies;
+import com.grocerygogetters.model.LineItems;
 import com.grocerygogetters.model.Products;
+import com.grocerygogetters.model.ShoppingCart;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class ProductsDaoImpl implements ProductsDao{
+	
+	private static ProductsDaoImpl productsDaoImpl;
+	
+	private ProductsDaoImpl() {
+	}
+	
+	public static ProductsDaoImpl getInstance() {
+		if (productsDaoImpl == null) {
+			productsDaoImpl = new ProductsDaoImpl();
+		}
+		return productsDaoImpl;
+	}
 
 	@Override
 	public List<Products> getProducts() {
@@ -56,5 +72,26 @@ public class ProductsDaoImpl implements ProductsDao{
 		}
 		tx.commit();
 		s.close();
+	}
+
+	@Override
+	public List<Products> getProductsByClient(Companies c) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from Products where COMP_ID = :CID";
+		Query<Products> scq = s.createQuery(hql,Products.class);
+		scq.setParameter("CID",c.getComp_id());
+		List<Products> sc = scq.list();
+		s.close();
+		return null;
+	}
+
+	@Override
+	public LineItems CreateProductListItem(Products p, int itemNumber) {
+//		Session s = HibernateUtil.getSession();
+//		Transaction tx = s.beginTransaction();
+		LineItems li = new LineItems();
+		li.setProduct_id(p);
+		li.setLitem_qty(itemNumber);
+		return li;
 	}
 }

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.grocerygogetters.util.HibernateUtil"/>
 <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
 <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
-<fullyQualifiedTypeName name="org.hibernate.Session"/>
 <fullyQualifiedTypeName name="com.grocerygogetters.model.Users"/>
-<fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDao"/>
-<fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDaoImpl"/>
 <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.dao.OrdersDao"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.dao.OrdersDaoImpl"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.model.Orders"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
 <fullyQualifiedTypeName name="com.grocerygogetters.dao.ShoppingCartDaoImpl"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.grocerygogetters.dao.UsersDaoImpl"/>
 </qualifiedTypeNameHistroy>

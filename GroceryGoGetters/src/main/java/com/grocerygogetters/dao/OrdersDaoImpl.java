@@ -4,11 +4,25 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import com.grocerygogetters.model.Orders;
+import com.grocerygogetters.model.Users;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class OrdersDaoImpl implements OrdersDao {
+	
+	private static OrdersDaoImpl ordersDaoImpl;
+	
+	private OrdersDaoImpl() {
+	}
+	
+	public static OrdersDaoImpl getInstance() {
+		if (ordersDaoImpl == null) {
+			ordersDaoImpl = new OrdersDaoImpl();
+		}
+		return ordersDaoImpl;
+	}
 
 	@Override
 	public List<Orders> getOrders() {
@@ -56,5 +70,16 @@ public class OrdersDaoImpl implements OrdersDao {
 		}
 		tx.commit();
 		s.close();
+	}
+
+	@Override
+	public List<Orders> getOrdersByUserID(Users u) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from Orders where USER_ID = :UID";
+		Query<Orders> scq = s.createQuery(hql,Orders.class);
+		scq.setParameter("UID",u.getUser_id());
+		List<Orders> sc = scq.list();
+		s.close();
+		return sc;
 	}
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.grocerygogetters.model.Events" table="Events">
+		<id name="event_id" column="EVENT_ID">
+			<generator class="increment"></generator>
+		</id>
+		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users"></many-to-one>
+		<many-to-one name="recur_id" column="RECURRENCE_ID" class="com.grocerygogetters.model.Recurrence"></many-to-one>
+		<property name="event_createddate" type="org.hibernate.type.DateType" column="EVENT_CREATEDDATE"></property>
+		<property name="event_nextdate" type="org.hibernate.type.DateType" column="EVENT_NEXTUPDATE"></property>
+		<many-to-one name="cart_id" column="CART_ID" class="com.grocerygogetters.model.ShoppingCart"></many-to-one> 
+						
+	</class>
+
+</hibernate-mapping>

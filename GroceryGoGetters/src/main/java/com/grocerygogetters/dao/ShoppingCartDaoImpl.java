@@ -9,6 +9,18 @@ import com.grocerygogetters.model.ShoppingCart;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class ShoppingCartDaoImpl implements ShoppingCartDao {
+	
+private static ShoppingCartDaoImpl shoppingCartDaoImpl;
+	
+	private ShoppingCartDaoImpl() {
+	}
+	
+	public static ShoppingCartDaoImpl getInstance() {
+		if (shoppingCartDaoImpl == null) {
+			shoppingCartDaoImpl = new ShoppingCartDaoImpl();
+		}
+		return shoppingCartDaoImpl;
+	}
 
 	@Override
 	public List<ShoppingCart> getShoppingCarts() {
@@ -20,7 +32,6 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
 
 	@Override
 	public ShoppingCart getShoppingCartById(int id) {
-		// TODO Auto-generated method stub
 		Session s = HibernateUtil.getSession();
 		ShoppingCart sc = s.load(ShoppingCart.class, id);
 		s.close();

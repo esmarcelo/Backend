@@ -12,6 +12,18 @@ import com.grocerygogetters.model.Users;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class UsersDaoImpl implements UsersDao{
+
+	private static UsersDaoImpl usersDaoImpl;
+	
+	private UsersDaoImpl() {
+	}
+	
+	public static UsersDaoImpl getInstance() {
+		if (usersDaoImpl == null) {
+			usersDaoImpl = new UsersDaoImpl();
+		}
+		return usersDaoImpl;
+	}
 	
 	public int createUser(Users u) {
 		Session s = HibernateUtil.getSession();

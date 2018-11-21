@@ -11,5 +11,6 @@ public interface LineItemsDao {
 	public int createLineItem(LineItems l);
 	public void updateLineItem(LineItems l);
 	public void deleteLineItemById(int id);
+	public List<LineItems> AddListItemToList(LineItems li, List<LineItems> lst);
 
 }

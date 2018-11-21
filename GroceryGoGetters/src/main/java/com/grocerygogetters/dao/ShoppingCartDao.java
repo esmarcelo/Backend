@@ -11,5 +11,6 @@ public interface ShoppingCartDao {
 	public int createShoppingCart(ShoppingCart sc);
 	public void updateShoppingCart(ShoppingCart sc);
 	public void deleteShoppingCartById(int id);
+	
 
 }

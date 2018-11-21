@@ -2,6 +2,8 @@ package com.grocerygogetters.util;
 
 import java.sql.Date;
 
+import org.hibernate.Session;
+
 import com.grocerygogetters.dao.OrdersDao;
 import com.grocerygogetters.dao.OrdersDaoImpl;
 import com.grocerygogetters.dao.ShoppingCartDao;
@@ -16,24 +18,24 @@ import com.grocerygogetters.model.Users;
 public class Driver {
 
 	public static void main(String[] args) {
-//		Session s = HibernateUtil.getSession();
-//		s.close();
+		Session s = HibernateUtil.getSession();
+		s.close();
 
 		
-		UsersDao user = new UsersDaoImpl();
-		ShoppingCartDao scd = new ShoppingCartDaoImpl();
-		OrdersDao od = new OrdersDaoImpl();
-		
-		Users u = new Users();
-		u.setUser_id(1);
-		u.setUser_fname("John");
-		u.setUser_lname("Smith");
-		u.setUser_email("jsmith@email.com");
-		u.setUser_password("1234");
-		u.setUser_username("jsmith");
-		u.setComp_id(null);
-		
-//		user.createUser(u);
+//		UsersDao user = new UsersDaoImpl();
+//		ShoppingCartDao scd = new ShoppingCartDaoImpl();
+//		OrdersDao od = new OrdersDaoImpl();
+//		
+//		Users u = new Users();
+//		u.setUser_id(1);
+//		u.setUser_fname("Jessica");
+//		u.setUser_lname("Jones");
+//		u.setUser_email("jjones@email.com");
+//		u.setUser_password("1234");
+//		u.setUser_username("jjones");
+//		u.setComp_id(null);
+//		
+//		UsersDaoImpl.getInstance().createUser(u);
 		
 //		ShoppingCart sc = new ShoppingCart();
 //		sc.setUser_id(u);
@@ -51,15 +53,14 @@ public class Driver {
 //		o.setOrder_submitted(Date.valueOf("2018-03-04"));
 //		od.createOrder(o);
 //		
-//		for(Orders nsc : user.getUserOrders(u)) {
+//		for(Orders nsc : od.getOrdersByUserID(u)) {
 //			System.out.println(nsc);
 //		}
 //		System.out.println( user.getUserById(u));
 		
 //		System.out.println(nu);
 
-		
-
+	
 
 	}
 

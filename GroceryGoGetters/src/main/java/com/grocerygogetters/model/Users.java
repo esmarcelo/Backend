@@ -1,5 +1,8 @@
 package com.grocerygogetters.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Users {
 	private int user_id;
 	private String user_fname;

@@ -9,6 +9,18 @@ import com.grocerygogetters.model.Role;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class RoleDaoImpl implements RoleDao {
+	
+	private static RoleDaoImpl roleDaoImpl;
+	
+	private RoleDaoImpl() {
+	}
+	
+	public static RoleDaoImpl getInstance() {
+		if (roleDaoImpl == null) {
+			roleDaoImpl = new RoleDaoImpl();
+		}
+		return roleDaoImpl;
+	}
 
 	@Override
 	public List<Role> getRoles() {

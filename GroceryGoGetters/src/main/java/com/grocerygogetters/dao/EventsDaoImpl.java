@@ -9,7 +9,19 @@ import com.grocerygogetters.model.Events;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class EventsDaoImpl implements EventsDao{
-
+	
+	private static EventsDaoImpl eventsDaoImpl;
+	
+	private EventsDaoImpl() {
+	}
+	
+	public static EventsDaoImpl getInstance() {
+		if (eventsDaoImpl == null) {
+			eventsDaoImpl = new EventsDaoImpl();
+		}
+		return eventsDaoImpl;
+	}
+	
 	@Override
 	public List<Events> getEvents() {
 		Session s = HibernateUtil.getSession();
