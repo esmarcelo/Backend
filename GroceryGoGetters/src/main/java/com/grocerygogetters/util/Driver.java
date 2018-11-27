@@ -1,16 +1,10 @@
 package com.grocerygogetters.util;
 
-import java.sql.Date;
-
 import org.hibernate.Session;
 
-import com.grocerygogetters.dao.OrdersDao;
-import com.grocerygogetters.dao.OrdersDaoImpl;
-import com.grocerygogetters.dao.ShoppingCartDao;
-import com.grocerygogetters.dao.ShoppingCartDaoImpl;
-import com.grocerygogetters.dao.UsersDao;
+import com.grocerygogetters.dao.RoleDaoImpl;
 import com.grocerygogetters.dao.UsersDaoImpl;
-import com.grocerygogetters.model.Orders;
+import com.grocerygogetters.model.Role;
 import com.grocerygogetters.model.Users;
 
 
@@ -25,17 +19,30 @@ public class Driver {
 //		UsersDao user = new UsersDaoImpl();
 //		ShoppingCartDao scd = new ShoppingCartDaoImpl();
 //		OrdersDao od = new OrdersDaoImpl();
-//		
+//		Role rc = new Role();
+//		rc.setRole_type("Client");
+		
+//		Role rcu = new Role();
+//		rcu.setRole_type("Customer");
+		
+//		Role rd = new Role();
+//		rd.setRole_id(3);
+//		rd.setRole_type("Driver");
 //		Users u = new Users();
 //		u.setUser_id(1);
-//		u.setUser_fname("Jessica");
-//		u.setUser_lname("Jones");
-//		u.setUser_email("jjones@email.com");
+//		u.setUser_fname("Joe");
+//		u.setUser_lname("Johnson");
+//		u.setUser_email("jjohnson@email.com");
 //		u.setUser_password("1234");
-//		u.setUser_username("jjones");
+//		u.setUser_username("jjohnson");
 //		u.setComp_id(null);
+//		u.setRole_id(rd);
 //		
 //		UsersDaoImpl.getInstance().createUser(u);
+		
+//		RoleDaoImpl.getInstance().createRole(rc);
+//		RoleDaoImpl.getInstance().createRole(rcu);
+//		RoleDaoImpl.getInstance().createRole(rd);
 		
 //		ShoppingCart sc = new ShoppingCart();
 //		sc.setUser_id(u);

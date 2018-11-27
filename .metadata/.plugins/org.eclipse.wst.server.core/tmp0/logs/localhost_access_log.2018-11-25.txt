@@ -1,0 +1,5 @@
+127.0.0.1 - - [25/Nov/2018:14:38:09 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [25/Nov/2018:14:38:09 -0500] "GET /GroceryGoGetters/WEB-INF/static/Home.html HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [25/Nov/2018:14:38:19 -0500] "GET /GroceryGoGetters/WEB-INF/static/Home.html HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [25/Nov/2018:14:38:25 -0500] "GET /GroceryGoGetters/home HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Nov/2018:14:42:41 -0500] "GET /GroceryGoGetters/driver/1 HTTP/1.1" 200 248

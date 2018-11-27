@@ -68,6 +68,23 @@ public class UsersDaoImpl implements UsersDao{
 		return sc;
 	}
 
+	public List<Users> getAllDrivers(){
+		Session s = HibernateUtil.getSession();
+		List<Users> drlst = s.createQuery("from Users where role_id = 3", Users.class).list();
+		s.close();
+		return drlst;
+	}
+	
+	public Users getDriver(Users u) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from Users where role_id= 3 and  USER_ID = :UID";
+		Query<Users> scq = s.createQuery(hql,Users.class);
+		scq.setParameter("UID",u.getUser_id());
+		Users ud =  scq.getSingleResult();
+		s.close();
+		return ud;
+		
+	}
 
 	
 

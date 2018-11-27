@@ -44,5 +44,15 @@ public class UserServices {
 	public List<Orders> getUserOrders(Users u){
 		return UsersDaoImpl.getInstance().getUserOrders(u);
 	}
+	
+	public List<Users> getAllDrivers(){
+		return UsersDaoImpl.getInstance().getAllDrivers();
+	}
+	
+	public Users getDriver(int id) {
+		Users u = new Users();
+		u.setUser_id(id);
+		return UsersDaoImpl.getInstance().getDriver(u);
+	}
 
 }
