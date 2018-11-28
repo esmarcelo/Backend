@@ -1,0 +1,17 @@
+package com.grocerygogetters.services;
+
+public class OrdersServices {
+
+private static OrdersServices ordersServices;
+	
+	private OrdersServices() {
+	}
+	
+	public static OrdersServices getInstance() {
+		if (ordersServices == null) {
+			ordersServices = new OrdersServices();
+		}
+		return ordersServices;
+	}
+	
+}

@@ -1,5 +1,8 @@
 package com.grocerygogetters.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class LineItems {
 	private int litem_id;
 	private int litem_qty;

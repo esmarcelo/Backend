@@ -1,0 +1,90 @@
+package com.grocerygogetters.util;
+
+import java.sql.Date;
+import java.util.Calendar;
+
+import org.hibernate.Session;
+
+import com.grocerygogetters.dao.OrdersDaoImpl;
+import com.grocerygogetters.dao.ProductsDaoImpl;
+import com.grocerygogetters.dao.ShoppingCartDaoImpl;
+import com.grocerygogetters.model.LineItems;
+import com.grocerygogetters.model.Orders;
+import com.grocerygogetters.model.Products;
+import com.grocerygogetters.model.Role;
+import com.grocerygogetters.model.ShoppingCart;
+import com.grocerygogetters.model.Users;
+
+
+
+public class Driver {
+
+	public static void main(String[] args) {
+		Session s = HibernateUtil.getSession();
+		s.close();
+
+		
+//		UsersDao user = new UsersDaoImpl();
+//		ShoppingCartDao scd = new ShoppingCartDaoImpl();
+//		OrdersDao od = new OrdersDaoImpl();
+//		Role rc = new Role();
+//		rc.setRole_type("Client");
+		
+//		Role rcu = new Role();
+//		rcu.setRole_type("Customer");
+		
+//		Role rd = new Role();
+//		rd.setRole_id(2);
+//		rd.setRole_type("Customer");
+		
+//		Users u = new Users();
+//		u.setUser_id(1);
+//		u.setUser_fname("Thomas");
+//		u.setUser_lname("Edison");
+//		u.setUser_email("tedison@email.com");
+//		u.setUser_password("1234");
+//		u.setUser_username("tedison");
+//		u.setComp_id(null);
+//		u.setRole_id(rd);
+//
+//
+//		Users d = new Users();
+//		d.setUser_id(3);
+//				
+//		ShoppingCart sc = new ShoppingCart();
+//		sc.setUser_id(u);
+//		sc.setCart_created_date(Date.valueOf("2018-11-27"));
+//		sc.setOrder_id(null);
+//		sc.setCart_name("user4");
+//		sc.setCart_status("Checked Out");
+//		ShoppingCartDaoImpl.getInstance().createShoppingCart(sc);	
+//		
+//		LineItems li = new LineItems();
+//		li.setCart_id(sc);
+//
+//		Orders o = new Orders();
+//		o.setUser_id(u);
+//		o.setOrder_amount(500);
+//		o.setOrder_status("Check Out");
+//		o.setOrder_submitted(Date.valueOf("2018-11-27"));
+//		o.setDriver_id(d);
+//		OrdersDaoImpl.getInstance().createOrder(o);
+
+		Products p = new Products();
+		p.setProduct_price(8.43);
+		p.setProduct_addeddate(Date.valueOf("2018-11-27"));
+		p.setProduct_stock(100);
+		p.setProduct_descr("Rice");
+		ProductsDaoImpl.getInstance().createProduct(p);
+		
+//		Creating user
+//		UsersDaoImpl.getInstance().createUser(u);
+		
+//		Creating Roles
+//		RoleDaoImpl.getInstance().createRole(rc);
+//		RoleDaoImpl.getInstance().createRole(rcu);
+//		RoleDaoImpl.getInstance().createRole(rd);
+
+	}
+
+}

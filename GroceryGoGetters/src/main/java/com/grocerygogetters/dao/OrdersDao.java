@@ -13,4 +13,5 @@ public interface OrdersDao {
 	public void updateOrder(Orders o);
 	public void deleteOrderById(int id);
 	public List<Orders> getOrdersByUserID(Users u);
+	public List<Orders> getOrdersByDriverID(Users u);
 }

@@ -3,6 +3,7 @@ package com.grocerygogetters.dao;
 import java.util.List;
 
 import com.grocerygogetters.model.LineItems;
+import com.grocerygogetters.model.Orders;
 
 public interface LineItemsDao {
 
@@ -12,5 +13,7 @@ public interface LineItemsDao {
 	public void updateLineItem(LineItems l);
 	public void deleteLineItemById(int id);
 	public List<LineItems> AddListItemToList(LineItems li, List<LineItems> lst);
+	public List<LineItems> getLineItemsByOrder(Orders o);
+	public void updateLineItemOrder(LineItems l);
 
 }

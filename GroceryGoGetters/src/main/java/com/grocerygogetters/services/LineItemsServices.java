@@ -1,0 +1,30 @@
+package com.grocerygogetters.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.grocerygogetters.dao.LineItemsDaoImpl;
+import com.grocerygogetters.model.LineItems;
+import com.grocerygogetters.model.Orders;
+@Service
+public class LineItemsServices {
+
+private static LineItemsServices lineItemsServices;
+	
+	private LineItemsServices() {
+	}
+	
+	public static LineItemsServices getInstance() {
+		if (lineItemsServices == null) {
+			lineItemsServices = new LineItemsServices();
+		}
+		return lineItemsServices;
+	}
+	
+	public List<LineItems> getLineItemsByOrder(int id){
+		Orders o = new Orders();
+		o.setOrder_id(id);
+		return LineItemsDaoImpl.getInstance().getLineItemsByOrder(o);
+	}
+}

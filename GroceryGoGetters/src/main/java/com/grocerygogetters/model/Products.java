@@ -8,6 +8,7 @@ public class Products {
 	private Date product_addeddate;
 	private Companies comp_id;
 	private int product_stock;
+	private String product_descr;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -32,6 +33,11 @@ public class Products {
 				return false;
 		} else if (!product_addeddate.equals(other.product_addeddate))
 			return false;
+		if (product_descr == null) {
+			if (other.product_descr != null)
+				return false;
+		} else if (!product_descr.equals(other.product_descr))
+			return false;
 		if (product_id != other.product_id)
 			return false;
 		if (Double.doubleToLongBits(product_price) != Double.doubleToLongBits(other.product_price))
@@ -51,6 +57,7 @@ public class Products {
 		int result = 1;
 		result = prime * result + ((comp_id == null) ? 0 : comp_id.hashCode());
 		result = prime * result + ((product_addeddate == null) ? 0 : product_addeddate.hashCode());
+		result = prime * result + ((product_descr == null) ? 0 : product_descr.hashCode());
 		result = prime * result + product_id;
 		long temp;
 		temp = Double.doubleToLongBits(product_price);
@@ -61,7 +68,8 @@ public class Products {
 	@Override
 	public String toString() {
 		return "Products [product_id=" + product_id + ", product_price=" + product_price + ", product_addeddate="
-				+ product_addeddate + ", comp_id=" + comp_id + ", product_stock=" + product_stock + "]";
+				+ product_addeddate + ", comp_id=" + comp_id + ", product_stock=" + product_stock + ", product_descr="
+				+ product_descr + "]";
 	}
 	public int getProduct_id() {
 		return product_id;
@@ -93,18 +101,25 @@ public class Products {
 	public void setProduct_stock(int product_stock) {
 		this.product_stock = product_stock;
 	}
-	public Products(int product_id, double product_price, Date product_addeddate, Companies comp_id,
-			int product_stock) {
+	public String getProduct_descr() {
+		return product_descr;
+	}
+	public void setProduct_descr(String product_descr) {
+		this.product_descr = product_descr;
+	}
+	public Products(int product_id, double product_price, Date product_addeddate, Companies comp_id, int product_stock,
+			String product_descr) {
 		super();
 		this.product_id = product_id;
 		this.product_price = product_price;
 		this.product_addeddate = product_addeddate;
 		this.comp_id = comp_id;
 		this.product_stock = product_stock;
+		this.product_descr = product_descr;
 	}
 	public Products() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
+		
 }

@@ -2,6 +2,8 @@ package com.grocerygogetters.model;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Orders {
 	private int order_id;
 	private Date order_created;
@@ -10,6 +12,7 @@ public class Orders {
 	private double order_amount;
 	private Users driver_id;
 	private String order_status;
+	private ShoppingCart cart_id;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -24,6 +27,11 @@ public class Orders {
 		if (getClass() != obj.getClass())
 			return false;
 		Orders other = (Orders) obj;
+		if (cart_id == null) {
+			if (other.cart_id != null)
+				return false;
+		} else if (!cart_id.equals(other.cart_id))
+			return false;
 		if (driver_id == null) {
 			if (other.driver_id != null)
 				return false;
@@ -64,6 +72,7 @@ public class Orders {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((cart_id == null) ? 0 : cart_id.hashCode());
 		result = prime * result + ((driver_id == null) ? 0 : driver_id.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(order_amount);
@@ -79,7 +88,7 @@ public class Orders {
 	public String toString() {
 		return "Orders [order_id=" + order_id + ", order_created=" + order_created + ", order_submitted="
 				+ order_submitted + ", user_id=" + user_id + ", order_amount=" + order_amount + ", driver_id="
-				+ driver_id + ", order_status=" + order_status + "]";
+				+ driver_id + ", order_status=" + order_status + ", cart_id=" + cart_id + "]";
 	}
 	public int getOrder_id() {
 		return order_id;
@@ -123,8 +132,14 @@ public class Orders {
 	public void setOrder_status(String order_status) {
 		this.order_status = order_status;
 	}
+	public ShoppingCart getCart_id() {
+		return cart_id;
+	}
+	public void setCart_id(ShoppingCart cart_id) {
+		this.cart_id = cart_id;
+	}
 	public Orders(int order_id, Date order_created, Date order_submitted, Users user_id, double order_amount,
-			Users driver_id, String order_status) {
+			Users driver_id, String order_status, ShoppingCart cart_id) {
 		super();
 		this.order_id = order_id;
 		this.order_created = order_created;
@@ -133,10 +148,12 @@ public class Orders {
 		this.order_amount = order_amount;
 		this.driver_id = driver_id;
 		this.order_status = order_status;
+		this.cart_id = cart_id;
 	}
 	public Orders() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 		
 }

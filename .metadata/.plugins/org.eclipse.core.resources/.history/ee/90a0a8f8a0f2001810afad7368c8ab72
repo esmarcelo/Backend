@@ -1,0 +1,16 @@
+package com.grocerygogetters.services;
+
+public class LineItemsServices {
+
+private static LineItemsServices lineItemsServices;
+	
+	private LineItemsServices() {
+	}
+	
+	public static LineItemsServices getInstance() {
+		if (lineItemsServices == null) {
+			lineItemsServices = new LineItemsServices();
+		}
+		return lineItemsServices;
+	}
+}

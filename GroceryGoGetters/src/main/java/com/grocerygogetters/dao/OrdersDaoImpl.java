@@ -82,4 +82,15 @@ public class OrdersDaoImpl implements OrdersDao {
 		s.close();
 		return sc;
 	}
+
+	@Override
+	public List<Orders> getOrdersByDriverID(Users u) {
+			Session s = HibernateUtil.getSession();
+			String hql = "from Orders where DRIVER_ID = :DID";
+			Query<Orders> ocq = s.createQuery(hql, Orders.class);
+			ocq.setParameter("DID", u.getUser_id());
+			List<Orders> ordlst = ocq.list();
+			s.close();
+			return ordlst;
+	}
 }

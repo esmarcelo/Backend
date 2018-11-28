@@ -12,7 +12,8 @@
 		<many-to-one name="user_id" column="USER_ID" class="com.grocerygogetters.model.Users" lazy="false"></many-to-one>
 		<property name="order_amount" type="org.hibernate.type.DoubleType" column="ORDER_AMOUNT"></property>
 		<many-to-one name="driver_id" column="DRIVER_ID" class="com.grocerygogetters.model.Users" lazy="false"></many-to-one>
-		<property name="order_status" type="org.hibernate.type.StringType" column="ORDER_STATUS"></property>				
+		<property name="order_status" type="org.hibernate.type.StringType" column="ORDER_STATUS"></property>
+		<many-to-one name="cart_id" column="CART_ID" class="com.grocerygogetters.model.ShoppingCart" lazy="false"></many-to-one>				
 	</class>
 
 </hibernate-mapping>

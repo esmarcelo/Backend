@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import com.grocerygogetters.model.LineItems;
+import com.grocerygogetters.model.Orders;
 import com.grocerygogetters.util.HibernateUtil;
 
 public class LineItemsDaoImpl implements LineItemsDao{
@@ -75,6 +77,31 @@ public class LineItemsDaoImpl implements LineItemsDao{
 		lst.add(li);
 		return lst;
 	}
+
+	@Override
+	public List<LineItems> getLineItemsByOrder(Orders o) {
+		Session s = HibernateUtil.getSession();
+		String hql = "from LineItems where ORDER_ID = :OID";
+		Query<LineItems> lcq = s.createQuery(hql, LineItems.class);
+		lcq.setParameter("OID", o.getOrder_id());
+		List<LineItems> linelst = lcq.list();
+		s.close();
+		return linelst;
+	}
+
+	@Override
+	public void updateLineItemOrder(LineItems l) {
+		Session s = HibernateUtil.getSession();
+		Transaction tx = s.beginTransaction();
+		LineItems li = (LineItems) s.get(LineItems.class, l.getLitem_id());
+		li.setOrder_id(l.getOrder_id());
+		s.update(li);
+		tx.commit();
+		s.close();
+		
+	}
+	
+	
 	
 	
 }

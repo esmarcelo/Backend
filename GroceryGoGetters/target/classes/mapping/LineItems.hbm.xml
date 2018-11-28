@@ -8,9 +8,9 @@
 			<generator class="increment"></generator>
 		</id>
 		<property name="litem_qty" type="org.hibernate.type.IntegerType" column="LITEM_QTY"></property>
-		<many-to-one name="order_id" column="ORDER_ID" class="com.grocerygogetters.model.Orders"></many-to-one>
-		<many-to-one name="product_id" column="PRODUCT_ID" class="com.grocerygogetters.model.Products"></many-to-one>
-		<many-to-one name="cart_id" column="CART_ID" class="com.grocerygogetters.model.ShoppingCart"></many-to-one>
+		<many-to-one name="order_id" column="ORDER_ID" class="com.grocerygogetters.model.Orders" lazy="false"></many-to-one>
+		<many-to-one name="product_id" column="PRODUCT_ID" class="com.grocerygogetters.model.Products" lazy="false"></many-to-one>
+		<many-to-one name="cart_id" column="CART_ID" class="com.grocerygogetters.model.ShoppingCart" lazy="false"></many-to-one>
 						
 	</class>
 
