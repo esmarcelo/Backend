@@ -96,7 +96,7 @@ public class Driver {
 //			LineItemsDaoImpl.getInstance().createLineItem(li);
 //			LineItemsDaoImpl.getInstance().createLineItem(li2);
 //			LineItemsDaoImpl.getInstance().updateLineItemOrder(li);
-			LineItemsDaoImpl.getInstance().updateLineItemOrder(li2);
+//			LineItemsDaoImpl.getInstance().updateLineItemOrder(li2);
 		
 //////  3. Setting up order for shopping cart
 //		Orders o = new Orders();

@@ -11,16 +11,6 @@
   	<maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   
-    <dependencyManagement>
-  		<dependencies>
-  			<dependency>
-  				<groupId>io.spring.platform</groupId>
-  				<artifactId>platform-bom</artifactId>
-  				<version>4.2.5.RELEASE</version>
-				<scope>import</scope>
-  			</dependency>
-  		</dependencies>
-  	</dependencyManagement>
   
   <dependencies>
   <dependency>
@@ -53,12 +43,12 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.6.3</version>
 		</dependency>
-		 	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate-core</artifactId>
-  		<version>5.3.7.Final</version>
-  		</dependency>
-  		<dependency>
+	 	<dependency>
+	 		<groupId>org.hibernate</groupId>
+	 		<artifactId>hibernate-core</artifactId>
+	 		<version>5.3.7.Final</version>
+ 		</dependency>
+ 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0</version>
@@ -71,4 +61,14 @@
 		</dependency>
   </dependencies>
   
+  <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>io.spring.platform</groupId>
+				<artifactId>platform-bom</artifactId>
+				<version>4.2.5.RELEASE</version>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

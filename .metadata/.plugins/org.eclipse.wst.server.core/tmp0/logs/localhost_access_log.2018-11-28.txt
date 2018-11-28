@@ -30,3 +30,13 @@
 0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:43:44 -0500] "GET /GroceryGoGetters/ HTTP/1.1" 404 1095
 0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:44:01 -0500] "GET /GroceryGoGetters/users HTTP/1.1" 404 1100
 0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:44:16 -0500] "GET /GroceryGoGetters/drivers HTTP/1.1" 404 1102
+127.0.0.1 - - [28/Nov/2018:02:45:02 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:45:25 -0500] "GET /GroceryGoGetters/drivers HTTP/1.1" 200 286
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:45:44 -0500] "GET /GroceryGoGetters/driverorders/3 HTTP/1.1" 200 1118
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:46:33 -0500] "GET /GroceryGoGetters/driversAllItemsbyOrders/2 HTTP/1.1" 200 3489
+127.0.0.1 - - [28/Nov/2018:02:55:23 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:55:29 -0500] "GET /GroceryGoGetters/driversAllItemsbyOrders/2 HTTP/1.1" 404 1124
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:56:03 -0500] "GET /GroceryGoGetters/driversAllItemsbyOrders/2 HTTP/1.1" 404 1124
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:56:14 -0500] "GET /GroceryGoGetters/driversAllItemsbyOrders/2 HTTP/1.1" 404 1124
+127.0.0.1 - - [28/Nov/2018:02:56:22 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [28/Nov/2018:02:56:48 -0500] "GET /GroceryGoGetters/driversAllItemsbyOrders/2 HTTP/1.1" 404 1124
