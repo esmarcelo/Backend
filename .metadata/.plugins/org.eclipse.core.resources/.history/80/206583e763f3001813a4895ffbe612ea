@@ -2,9 +2,6 @@ package com.grocerygogetters.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -52,17 +49,5 @@ public class UsersController {
 		Users u = userServices.getUserById(1);
 		List<Orders> o = userServices.getUserOrders(u);
 		return o;
-	}
-	
-	@GetMapping("/userLogin")
-	@ResponseBody
-	public Users loginUser(HttpServletRequest request, HttpServletResponse response) {
-		Users u = new Users();
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		u.setUser_username(username);
-		u.setUser_password(password);
-		Users vuser = userServices.getUserByUsernamePass(u);
-		return vuser;
 	}
 }

@@ -86,17 +86,6 @@ public class UsersDaoImpl implements UsersDao{
 		
 	}
 
-	@Override
-	public Users getUserByUsernamePass(Users u) {
-		Session s = HibernateUtil.getSession();
-		String hql = "from Users where USER_USERNAME =:UNAME and USER_PASSWORD =:PASS";
-		Query<Users> ucq = s.createQuery(hql,Users.class);
-		ucq.setParameter("UNAME", u.getUser_username());
-		ucq.setParameter("PASS", u.getUser_password());
-		Users usr = ucq.getSingleResult();
-		return usr;
-	}
-
 	
 
 }

@@ -54,9 +54,5 @@ public class UserServices {
 		u.setUser_id(id);
 		return UsersDaoImpl.getInstance().getDriver(u);
 	}
-	
-	public Users getUserByUsernamePass(Users u) {
-		return UsersDaoImpl.getInstance().getUserByUsernamePass(u);
-	}
 
 }

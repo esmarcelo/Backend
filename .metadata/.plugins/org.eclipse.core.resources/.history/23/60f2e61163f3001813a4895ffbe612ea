@@ -12,7 +12,6 @@ public interface UsersDao {
 	public Users getUserById(Users u);
 	public List<ShoppingCart> getUsersCart(Users u);
 	public List<Orders> getUserOrders(Users u);
-	public Users getUserByUsernamePass(Users u);
 	
 
 }
