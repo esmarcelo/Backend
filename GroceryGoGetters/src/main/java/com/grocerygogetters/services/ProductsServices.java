@@ -23,4 +23,8 @@ private static ProductsServices productsServices;
 	public int createProduct(Products p) {
 		return ProductsDaoImpl.getInstance().createProduct(p);
 	}
+	
+	public void updateProduct(Products p) {
+		ProductsDaoImpl.getInstance().updateProduct(p);
+	}
 }

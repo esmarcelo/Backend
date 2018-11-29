@@ -24,5 +24,14 @@ public class OrdersController {
 		List<Orders> u = ordersServices.getAllOrders();
 		return u;
 	}
+	
+	@GetMapping("/allDeliveredOrders")
+	@ResponseBody
+	public List<Orders> getAllDeliveredOrders(){
+		List<Orders> o = ordersServices.getDeliveredOrders();
+		return o;
+	}
+	
+	
 
 }

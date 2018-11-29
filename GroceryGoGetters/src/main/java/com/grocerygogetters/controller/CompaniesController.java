@@ -26,6 +26,14 @@ public class CompaniesController {
 		
 	}
 	
+//	@PostMapping("/companies/createCompany")
+//	public void createCompany(@RequestParam("name") String name ) {
+//		System.out.println(name);
+//		Companies com = new Companies();
+//		companiesServices.createCompany(com);
+//		
+//	}
+	
 	@GetMapping("/company/{id}")
 	@ResponseBody
 	public Companies getCompanyById(@PathVariable("id")int id) {

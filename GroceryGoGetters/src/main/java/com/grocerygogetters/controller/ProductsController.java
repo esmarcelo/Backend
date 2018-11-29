@@ -32,4 +32,9 @@ public class ProductsController {
 		productsServices.createProduct(p);
 		
 	}
+	
+	@PostMapping("product/updateProduct")
+	public void updateProduct(@RequestBody Products  prod) {
+		productsServices.updateProduct(prod);
+	}
 }

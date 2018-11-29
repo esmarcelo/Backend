@@ -45,8 +45,8 @@ public class Driver {
 //		UsersDaoImpl.getInstance().updateUser(u);
 
 		Recurrence r = new Recurrence();
-		r.setRecur_type("Weekly");
-		r.setRecur_descr("Every Week");
+		r.setRecur_type("Daily");
+		r.setRecur_descr("Every Day");
 		
 //		RecurrenceDaoImpl.getInstance().createRecurrence(r);
 

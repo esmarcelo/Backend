@@ -35,3 +35,12 @@
 0:0:0:0:0:0:0:1 - - [29/Nov/2018:10:03:13 -0500] "POST /GroceryGoGetters/product/createProduct HTTP/1.1" 500 10076
 0:0:0:0:0:0:0:1 - - [29/Nov/2018:10:11:04 -0500] "POST /GroceryGoGetters/product/createProduct HTTP/1.1" 404 1047
 0:0:0:0:0:0:0:1 - - [29/Nov/2018:10:22:00 -0500] "POST /GroceryGoGetters/product/createProduct HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:11:46:01 -0500] "POST /GroceryGoGetters/createEvent HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:16:55:14 -0500] "GET /GroceryGoGetters/home HTTP/1.1" 200 159
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:16:55:14 -0500] "GET /favicon.ico HTTP/1.1" 404 1085
+127.0.0.1 - - [29/Nov/2018:16:59:39 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:16:59:39 -0500] "GET /GroceryGoGetters/ HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:03:46 -0500] "GET /GroceryGoGetters/users HTTP/1.1" 200 1072
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:03:46 -0500] "GET /GroceryGoGetters/users HTTP/1.1" 200 1072
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:04:01 -0500] "GET /GroceryGoGetters/shoppingcarts/1 HTTP/1.1" 200 819
+127.0.0.1 - - [29/Nov/2018:17:09:42 -0500] "GET / HTTP/1.1" 404 1074

@@ -93,4 +93,24 @@ public class OrdersDaoImpl implements OrdersDao {
 			s.close();
 			return ordlst;
 	}
+
+	@Override
+	public List<Orders> getDeliveredOrders() {
+		Session s = HibernateUtil.getSession();
+		String hql = "from Orders where ORDER_STATUS = :OSTAT";
+		Query<Orders> ocq = s.createQuery(hql, Orders.class);
+		ocq.setParameter("OSTAT", "Delivered");
+		List<Orders> ordlst = ocq.list();
+		return ordlst;
+	}
+
+	@Override
+	public void updateOrderComplete(Orders o) {
+		Session s = HibernateUtil.getSession();
+		Orders nord = s.load(Orders.class, o.getOrder_id());
+		nord.setOrder_status("Delivered");
+		
+	}
+	
+	
 }
