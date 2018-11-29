@@ -27,8 +27,4 @@ private static OrdersServices ordersServices;
 		u.setUser_id(id);
 		return OrdersDaoImpl.getInstance().getOrdersByDriverID(u);
 	}
-	
-	public List<Orders> getAllOrders(){
-		return OrdersDaoImpl.getInstance().getOrders();
-	}
 }
