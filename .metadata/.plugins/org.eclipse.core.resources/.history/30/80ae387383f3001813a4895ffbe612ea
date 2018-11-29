@@ -1,0 +1,19 @@
+package com.grocerygogetters.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EventsServices {
+
+private static EventsServices eventsServices;
+	
+	private EventsServices() {
+	}
+	
+	public static EventsServices getInstance() {
+		if (eventsServices == null) {
+			eventsServices = new EventsServices();
+		}
+		return eventsServices;
+	}
+}

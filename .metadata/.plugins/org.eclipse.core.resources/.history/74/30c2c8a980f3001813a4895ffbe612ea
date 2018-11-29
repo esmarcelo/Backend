@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.grocerygogetters.model.Companies;
 import com.grocerygogetters.model.Orders;
 import com.grocerygogetters.model.Role;
 import com.grocerygogetters.model.ShoppingCart;
@@ -100,27 +99,6 @@ public class UsersController {
 		u.setUser_zipcode(zipcode);
 		u.setUser_password(pass);
 		u.setComp_id(null);
-		u.setRole_id(r);
-		userServices.creatUser(u);
-	}
-	
-	@PostMapping("/createClientCustomer")
-	public void createClientUser( @RequestParam("address")String address, @RequestParam("city")String city, @RequestParam("email")String email, @RequestParam("firstName")String firstName,
-			@RequestParam("lastName")String lastName, @RequestParam("userName")String userName, @RequestParam("zipCode")String zipcode, @RequestParam("password")String pass, @RequestParam("companyId")int compid) {
-		Role r = new Role();
-		r.setRole_id(1);
-		Companies c = new Companies();
-		c.setComp_id(compid);
-		Users u = new Users();
-		u.setUser_address(address);
-		u.setUser_city(city);
-		u.setUser_email(email);
-		u.setUser_fname(firstName);
-		u.setUser_lname(lastName);
-		u.setUser_username(userName);
-		u.setUser_zipcode(zipcode);
-		u.setUser_password(pass);
-		u.setComp_id(c);
 		u.setRole_id(r);
 		userServices.creatUser(u);
 	}
