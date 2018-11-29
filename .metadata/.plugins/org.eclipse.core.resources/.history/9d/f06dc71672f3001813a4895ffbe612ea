@@ -33,14 +33,6 @@ public class UsersDaoImpl implements UsersDao{
 		s.close();
 		return userPK;
 	}
-	
-	public void updateUser(Users u) {
-		Session s = HibernateUtil.getSession();
-		Transaction tx = s.beginTransaction();
-		s.update(u);
-		tx.commit();
-		s.close();
-	}
 
 	public List<Users> getUsers() {
 		Session s = HibernateUtil.getSession();

@@ -42,15 +42,15 @@ public class Driver {
 		Users u = new Users();
 		u.setUser_id(1);
 		u.setRole_id(rd);
-		u.setUser_fname("John");
-		u.setUser_lname("Smith");
-		u.setUser_email("jsmith@email.com");
-		u.setUser_password("1234");
-		u.setUser_username("jsmith");
-		u.setComp_id(null);
+//		u.setUser_fname("Thomas");
+//		u.setUser_lname("Edison");
+//		u.setUser_email("tedison@email.com");
+//		u.setUser_password("1234");
+//		u.setUser_username("tedison");
+//		u.setComp_id(null);
 //		u.setRole_id(rd);
 //		UsersDaoImpl.getInstance().createUser(u);
-		UsersDaoImpl.getInstance().updateUser(u);
+		UsersDaoImpl.getInstance().
 
 
 //		Users d = new Users();

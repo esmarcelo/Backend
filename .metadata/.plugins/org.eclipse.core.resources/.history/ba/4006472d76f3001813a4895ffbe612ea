@@ -38,18 +38,18 @@ public class UsersController {
 		return u;
 	}
 	
-	@GetMapping("/shoppingcarts/{id}")
+	@GetMapping("/shoppingcarts")
 	@ResponseBody
-	public List<ShoppingCart> getUserShoppingCart(@PathVariable("id")int id){
-		Users u = userServices.getUserById(id);
+	public List<ShoppingCart> getUserShoppingCart(){
+		Users u = userServices.getUserById(1);
 		List<ShoppingCart> sc = userServices.getUsersCart(u);
 		return sc;
 	}
 	
-	@GetMapping("/orders/{id}")
+	@GetMapping("/orders")
 	@ResponseBody
-	public List<Orders> getUserOrders(@PathVariable("id")int id){
-		Users u = userServices.getUserById(id);
+	public List<Orders> getUserOrders(){
+		Users u = userServices.getUserById(1);
 		List<Orders> o = userServices.getUserOrders(u);
 		return o;
 	}

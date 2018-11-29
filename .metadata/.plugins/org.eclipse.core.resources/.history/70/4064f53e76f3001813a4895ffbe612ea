@@ -46,10 +46,10 @@ public class UsersController {
 		return sc;
 	}
 	
-	@GetMapping("/orders/{id}")
+	@GetMapping("/orders")
 	@ResponseBody
-	public List<Orders> getUserOrders(@PathVariable("id")int id){
-		Users u = userServices.getUserById(id);
+	public List<Orders> getUserOrders(){
+		Users u = userServices.getUserById(1);
 		List<Orders> o = userServices.getUserOrders(u);
 		return o;
 	}

@@ -35,22 +35,20 @@ public class Driver {
 //		Role rcu = new Role();
 //		rcu.setRole_type("Customer");
 		
-		Role rd = new Role();
-		rd.setRole_id(2);
+//		Role rd = new Role();
+//		rd.setRole_id(2);
 		
 //////	0.	Creating a new user
-		Users u = new Users();
-		u.setUser_id(1);
-		u.setRole_id(rd);
-		u.setUser_fname("John");
-		u.setUser_lname("Smith");
-		u.setUser_email("jsmith@email.com");
-		u.setUser_password("1234");
-		u.setUser_username("jsmith");
-		u.setComp_id(null);
+//		Users u = new Users();
+//		u.setUser_id(4);
+//		u.setUser_fname("Thomas");
+//		u.setUser_lname("Edison");
+//		u.setUser_email("tedison@email.com");
+//		u.setUser_password("1234");
+//		u.setUser_username("tedison");
+//		u.setComp_id(null);
 //		u.setRole_id(rd);
 //		UsersDaoImpl.getInstance().createUser(u);
-		UsersDaoImpl.getInstance().updateUser(u);
 
 
 //		Users d = new Users();
