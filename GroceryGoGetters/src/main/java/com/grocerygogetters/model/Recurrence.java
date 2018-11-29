@@ -1,5 +1,8 @@
 package com.grocerygogetters.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Recurrence {
 	private int recur_id;
 	private String recur_type;

@@ -2,6 +2,8 @@ package com.grocerygogetters.model;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Products {
 	private int product_id;
 	private double product_price;

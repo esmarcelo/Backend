@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.grocerygogetters.model.LineItems;
@@ -62,19 +62,18 @@ public class DriversController {
 	}
 	
 	@PostMapping("/createDriver")
-	public void createUser( @RequestParam("address")String address, @RequestParam("city")String city, @RequestParam("email")String email, @RequestParam("firstName")String firstName,
-			@RequestParam("lastName")String lastName, @RequestParam("userName")String userName, @RequestParam("zipCode")String zipcode, @RequestParam("password")String pass) {
+	public void createUser( @RequestBody Users user) {
 		Role r = new Role();
 		r.setRole_id(3);
 		Users u = new Users();
-		u.setUser_address(address);
-		u.setUser_city(city);
-		u.setUser_email(email);
-		u.setUser_fname(firstName);
-		u.setUser_lname(lastName);
-		u.setUser_username(userName);
-		u.setUser_zipcode(zipcode);
-		u.setUser_password(pass);
+		u.setUser_address(user.getUser_address());
+		u.setUser_city(user.getUser_city());
+		u.setUser_email(user.getUser_email());
+		u.setUser_fname(user.getUser_fname());
+		u.setUser_lname(user.getUser_lname());
+		u.setUser_username(user.getUser_username());
+		u.setUser_zipcode(user.getUser_zipcode());
+		u.setUser_password(user.getUser_password());
 		u.setComp_id(null);
 		u.setRole_id(r);
 		userServices.creatUser(u);

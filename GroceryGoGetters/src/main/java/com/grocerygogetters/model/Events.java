@@ -2,6 +2,8 @@ package com.grocerygogetters.model;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+@Component
 public class Events {
 	private int event_id;
 	private Users user_id;

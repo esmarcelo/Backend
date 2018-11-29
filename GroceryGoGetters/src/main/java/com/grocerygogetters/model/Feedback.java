@@ -1,5 +1,8 @@
 package com.grocerygogetters.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Feedback {
 
 	private int feedback_id;

@@ -1,12 +1,10 @@
 package com.grocerygogetters.controller;
 
-import java.sql.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.grocerygogetters.model.Companies;
 import com.grocerygogetters.model.Products;
@@ -19,17 +17,17 @@ public class ProductsController {
 	@Autowired
 	ProductsServices productsServices;
 	
-	@PostMapping("/createProduct")
-	public void createProduct(@RequestParam("productPrice")double prodPrice, @RequestParam("productAdded")Date date, 
-			@RequestParam("companyid")int compid, @RequestParam("productStock")int stock, @RequestParam("productDescr")String proddescr) {
-		Companies com = new Companies();
-		com.setComp_id(compid);
+	@PostMapping("product/createProduct")
+	public void createProduct(@RequestBody Products prod/*@RequestParam("product_price")double prodPrice, @RequestParam("product_addeddate")Date date, 
+			@RequestParam("comp_id")int compid, @RequestParam("product_stock")int stock, @RequestParam("product_descr")String proddescr*/) {
+//		Companies com = new Companies();
+//		com.setComp_id(prod.getComp_id().getComp_id());
 		Products p = new Products();
-		p.setComp_id(com);
-		p.setProduct_price(prodPrice);
-		p.setProduct_addeddate(date);
-		p.setProduct_stock(stock);
-		p.setProduct_descr(proddescr);
+		p.setComp_id(prod.getComp_id());
+		p.setProduct_price(prod.getProduct_price());
+		p.setProduct_addeddate(prod.getProduct_addeddate());
+		p.setProduct_stock(prod.getProduct_stock());
+		p.setProduct_descr(prod.getProduct_descr());
 		
 		productsServices.createProduct(p);
 		

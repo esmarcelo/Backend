@@ -1,0 +1,35 @@
+package com.grocerygogetters.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.grocerygogetters.model.Companies;
+import com.grocerygogetters.model.Products;
+import com.grocerygogetters.services.ProductsServices;
+
+@Controller
+@CrossOrigin(origins="*", allowedHeaders="*")
+public class ProductsController {
+
+	@Autowired
+	ProductsServices productsServices;
+	
+	@PostMapping("product/createProduct")
+	public void createProduct(@RequestBody Products prod/*@RequestParam("product_price")double prodPrice, @RequestParam("product_addeddate")Date date, 
+			@RequestParam("comp_id")int compid, @RequestParam("product_stock")int stock, @RequestParam("product_descr")String proddescr*/) {
+		Companies com = new Companies();
+//		com.setComp_id(prod.getComp_id().getComp_id());
+		Products p = new Products();
+		p.setComp_id(com);
+		p.setProduct_price(prod.getProduct_price());
+		p.setProduct_addeddate(prod.getProduct_addeddate());
+		p.setProduct_stock(prod.getProduct_stock());
+		p.setProduct_descr(prod.getProduct_descr());
+		
+		productsServices.createProduct(p);
+		
+	}
+}

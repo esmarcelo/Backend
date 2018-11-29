@@ -1,5 +1,8 @@
 package com.grocerygogetters.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Role {
 	private int role_id;
 	private String role_type;

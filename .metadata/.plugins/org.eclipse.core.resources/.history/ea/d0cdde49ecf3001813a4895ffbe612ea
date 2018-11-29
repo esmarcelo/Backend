@@ -1,0 +1,43 @@
+package com.grocerygogetters.controller;
+
+import java.sql.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.grocerygogetters.model.Events;
+import com.grocerygogetters.model.Recurrence;
+import com.grocerygogetters.model.ShoppingCart;
+import com.grocerygogetters.model.Users;
+import com.grocerygogetters.services.EventsServices;
+
+@Controller
+@CrossOrigin(origins="*", allowedHeaders="*")
+public class EventsController {
+	
+	@Autowired
+	EventsServices eventsServices;
+
+	@PostMapping("/createEvent")
+	public void createEvent(@RequestParam("userid")int userid, @RequestParam("recurrenceid")int recurid, @RequestParam("createdDate")Date date, @RequestParam("cartid")int cartid ) {
+		Users u = new Users();
+		u.setUser_id(userid);
+		
+		ShoppingCart sc = new ShoppingCart();
+		sc.setCart_id(cartid);
+		
+		Recurrence r = new Recurrence();
+		r.setRecur_id(recurid);
+		
+		Events e = new Events();
+		e.setCart_id(sc);
+		e.setEvent_createddate(date);
+		e.setRecur_id(r);
+		e.setUser_id(u);
+		eventsServices.createEvent(e);
+		
+	}
+}
