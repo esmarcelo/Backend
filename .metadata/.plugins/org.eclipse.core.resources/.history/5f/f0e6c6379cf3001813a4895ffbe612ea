@@ -17,8 +17,7 @@ public class CompaniesController {
 	CompaniesServices companiesServices;
 	
 	@PostMapping("/createCompany")
-	public void createCompany(@RequestParam("comp_name")String compName, @RequestParam("comp_state")String compState, @RequestParam("comp_city")String city, 
-			@RequestParam("comp_address")String address) {
+	public void createCompany(@RequestParam("companyName")String compName, @RequestParam("companyState")String compState, @RequestParam("companyCity")String city, @RequestParam("companyAddress")String address) {
 		Companies com = new Companies();
 		com.setComp_address(address);
 		com.setComp_city(city);
