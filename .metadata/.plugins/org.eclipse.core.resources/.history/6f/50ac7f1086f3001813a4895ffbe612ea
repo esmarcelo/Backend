@@ -1,0 +1,21 @@
+package com.grocerygogetters.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductsServices {
+
+private static ProductsServices productsServices;
+	
+	private ProductsServices() {
+	}
+	
+	public static ProductsServices getInstance() {
+		if (productsServices == null) {
+			productsServices = new ProductsServices();
+		}
+		return productsServices;
+	}
+	
+	
+}
