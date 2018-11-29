@@ -17,13 +17,13 @@ public class CompaniesController {
 	CompaniesServices companiesServices;
 	
 	@PostMapping("/createCompany")
-	public void createCompany(@RequestParam("comp_name") String comp_name, @RequestParam("comp_state") String comp_state, @RequestParam("comp_city") String comp_city, 
-			@RequestParam("comp_address")String comp_address) {
+	public void createCompany(@RequestParam("comp_name")String compName, @RequestParam("comp_state")String compState, @RequestParam("comp_city")String city, 
+			@RequestParam("comp_address")String address) {
 		Companies com = new Companies();
-		com.setComp_address(comp_address);
-		com.setComp_city(comp_city);
-		com.setComp_name(comp_name);
-		com.setComp_state(comp_state);
+		com.setComp_address(address);
+		com.setComp_city(city);
+		com.setComp_name(compName);
+		com.setComp_state(compState);
 		companiesServices.createCompany(com);
 		
 	}

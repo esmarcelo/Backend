@@ -1,8 +1,5 @@
 package com.grocerygogetters.model;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Companies {
 	private int comp_id;
 	private String comp_name;
