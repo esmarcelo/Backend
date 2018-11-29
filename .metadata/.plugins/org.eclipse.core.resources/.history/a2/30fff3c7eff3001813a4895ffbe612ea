@@ -24,10 +24,4 @@ private static CompaniesServices companiesServices;
 		return CompaniesDaoImpl.getInstance().createCompany(com);
 		
 	}
-	
-	public Companies getCompanyById(int id) {
-		Companies com = new Companies();
-		com.setComp_id(id);
-		return CompaniesDaoImpl.getInstance().getCompanyById(id);
-	}
 }

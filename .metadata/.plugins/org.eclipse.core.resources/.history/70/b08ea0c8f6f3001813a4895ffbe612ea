@@ -48,7 +48,7 @@ public class Driver {
 		r.setRecur_type("Weekly");
 		r.setRecur_descr("Every Week");
 		
-//		RecurrenceDaoImpl.getInstance().createRecurrence(r);
+		RecurrenceDaoImpl.getInstance().createRecurrence(r);
 
 //		Users d = new Users();
 //		d.setUser_id(3);

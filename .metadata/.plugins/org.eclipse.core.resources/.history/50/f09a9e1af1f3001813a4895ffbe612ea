@@ -27,8 +27,4 @@ private static LineItemsServices lineItemsServices;
 		o.setOrder_id(id);
 		return LineItemsDaoImpl.getInstance().getLineItemsByOrder(o);
 	}
-	
-	public int createLineItem(LineItems li) {
-		return LineItemsDaoImpl.getInstance().createLineItem(li);
-	}
 }

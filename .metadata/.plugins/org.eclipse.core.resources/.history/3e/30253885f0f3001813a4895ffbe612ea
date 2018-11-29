@@ -107,7 +107,8 @@ public class UsersController {
 	public void createClientUser(@RequestBody Users user) {
 		Role r = new Role();
 		r.setRole_id(1);
-
+//		Companies c = new Companies();
+//		c.setComp_id(compid);
 		Users u = new Users();
 		u.setUser_address(user.getUser_address());
 		u.setUser_city(user.getUser_city());

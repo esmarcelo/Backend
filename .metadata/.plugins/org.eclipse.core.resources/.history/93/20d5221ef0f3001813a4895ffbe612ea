@@ -1,7 +1,5 @@
 package com.grocerygogetters.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,26 +9,27 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.grocerygogetters.model.LineItems;
-import com.grocerygogetters.services.LineItemsServices;
+import com.grocerygogetters.model.Companies;
+import com.grocerygogetters.services.CompaniesServices;
 
 @Controller
 @CrossOrigin(origins="*", allowedHeaders="*")
-public class LineItemsController {
-	
+public class CompaniesController {
+
 	@Autowired
-	LineItemsServices lineItemsServices;
+	CompaniesServices companiesServices;
 	
-	@GetMapping("/lineItemsbyOrders/{id}")
-	@ResponseBody
-	public List<LineItems> getLineItemsByOrder(@PathVariable("id")int id){
-		List<LineItems> itemlist = lineItemsServices.getLineItemsByOrder(id);
-		return itemlist;
+	@PostMapping("/companies/createCompany")
+	public void createCompany(@RequestBody Companies companies) {
+		Companies com = companies;
+		companiesServices.createCompany(com);
+		
 	}
 	
-	@PostMapping("/createLineItem")
-	public void createLineItem(@RequestBody LineItems li) {
-		lineItemsServices.createLineItem(li);
+	@GetMapping("/company/{id}")
+	@ResponseBody
+	public Companies getCompanyById(@PathVariable("id")int id) {
+		return companiesServices.getInstance().getCompanyById(id);
 	}
 
 }

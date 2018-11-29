@@ -3,11 +3,9 @@ package com.grocerygogetters.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.grocerygogetters.model.Companies;
 import com.grocerygogetters.services.CompaniesServices;
@@ -20,16 +18,15 @@ public class CompaniesController {
 	CompaniesServices companiesServices;
 	
 	@PostMapping("/companies/createCompany")
-	public void createCompany(@RequestBody Companies companies) {
+	public void createCompany(@RequestBody Companies companies/*@RequestParam("comp_name") String comp_name, @RequestParam("comp_state") String comp_state, @RequestParam("comp_city") String comp_city, 
+			@RequestParam("comp_address")String comp_address*/) {
 		Companies com = companies;
+//		com.setComp_address(comp_address);
+//		com.setComp_city(comp_city);
+//		com.setComp_name(comp_name);
+//		com.setComp_state(comp_state);
 		companiesServices.createCompany(com);
 		
-	}
-	
-	@GetMapping("/company/{id}")
-	@ResponseBody
-	public Companies getCompanyById(@PathVariable("id")int id) {
-		return companiesServices.getCompanyById(id);
 	}
 
 }
