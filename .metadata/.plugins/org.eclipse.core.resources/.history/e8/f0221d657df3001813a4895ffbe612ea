@@ -10,8 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.grocerygogetters.model.Orders;
@@ -66,20 +64,5 @@ public class UsersController {
 		u.setUser_password(password);
 		Users vuser = userServices.getUserByUsernamePass(u);
 		return vuser;
-	}
-	
-	@PostMapping("/userUpdate")
-	public void updateUser(@RequestParam("id")int id, @RequestParam("address")String address, @RequestParam("city")String city, @RequestParam("email")String email, @RequestParam("firstName")String firstName,
-			@RequestParam("lastName")String lastName, @RequestParam("userName")String userName, @RequestParam("zipCode")String zipcode) {
-		Users u = new Users();
-		u.setUser_id(id);
-		u.setUser_address(address);
-		u.setUser_city(city);
-		u.setUser_email(email);
-		u.setUser_fname(firstName);
-		u.setUser_lname(lastName);
-		u.setUser_username(userName);
-		u.setUser_zipcode(zipcode);
-		userServices.updateUser(u);
 	}
 }

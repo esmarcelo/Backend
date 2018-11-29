@@ -58,9 +58,5 @@ public class UserServices {
 	public Users getUserByUsernamePass(Users u) {
 		return UsersDaoImpl.getInstance().getUserByUsernamePass(u);
 	}
-	
-	public void updateUser(Users u) {
-		 UsersDaoImpl.getInstance().updateUser(u);
-	}
 
 }

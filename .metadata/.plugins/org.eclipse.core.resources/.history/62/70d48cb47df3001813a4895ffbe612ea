@@ -80,6 +80,6 @@ public class UsersController {
 		u.setUser_lname(lastName);
 		u.setUser_username(userName);
 		u.setUser_zipcode(zipcode);
-		userServices.updateUser(u);
+		
 	}
 }
