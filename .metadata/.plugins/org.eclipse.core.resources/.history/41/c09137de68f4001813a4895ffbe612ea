@@ -11,7 +11,6 @@ public class Products {
 	private Companies comp_id;
 	private int product_stock;
 	private String product_descr;
-	private String product_name;
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
@@ -43,11 +42,6 @@ public class Products {
 			return false;
 		if (product_id != other.product_id)
 			return false;
-		if (product_name == null) {
-			if (other.product_name != null)
-				return false;
-		} else if (!product_name.equals(other.product_name))
-			return false;
 		if (Double.doubleToLongBits(product_price) != Double.doubleToLongBits(other.product_price))
 			return false;
 		if (product_stock != other.product_stock)
@@ -67,7 +61,6 @@ public class Products {
 		result = prime * result + ((product_addeddate == null) ? 0 : product_addeddate.hashCode());
 		result = prime * result + ((product_descr == null) ? 0 : product_descr.hashCode());
 		result = prime * result + product_id;
-		result = prime * result + ((product_name == null) ? 0 : product_name.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(product_price);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -78,7 +71,7 @@ public class Products {
 	public String toString() {
 		return "Products [product_id=" + product_id + ", product_price=" + product_price + ", product_addeddate="
 				+ product_addeddate + ", comp_id=" + comp_id + ", product_stock=" + product_stock + ", product_descr="
-				+ product_descr + ", product_name=" + product_name + "]";
+				+ product_descr + "]";
 	}
 	public int getProduct_id() {
 		return product_id;
@@ -116,14 +109,8 @@ public class Products {
 	public void setProduct_descr(String product_descr) {
 		this.product_descr = product_descr;
 	}
-	public String getProduct_name() {
-		return product_name;
-	}
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
-	}
 	public Products(int product_id, double product_price, Date product_addeddate, Companies comp_id, int product_stock,
-			String product_descr, String product_name) {
+			String product_descr) {
 		super();
 		this.product_id = product_id;
 		this.product_price = product_price;
@@ -131,12 +118,10 @@ public class Products {
 		this.comp_id = comp_id;
 		this.product_stock = product_stock;
 		this.product_descr = product_descr;
-		this.product_name = product_name;
 	}
 	public Products() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 		
 }
