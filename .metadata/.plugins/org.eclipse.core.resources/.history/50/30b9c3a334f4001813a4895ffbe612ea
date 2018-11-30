@@ -35,8 +35,4 @@ private static OrdersServices ordersServices;
 	public List<Orders> getDeliveredOrders(){
 		return OrdersDaoImpl.getInstance().getDeliveredOrders();
 	}
-	
-	public void updateOrderDelivered(Orders o) {
-		OrdersDaoImpl.getInstance().updateOrderComplete(o);
-	}
 }

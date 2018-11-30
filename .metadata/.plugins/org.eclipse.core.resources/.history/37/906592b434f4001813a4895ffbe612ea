@@ -37,6 +37,6 @@ private static OrdersServices ordersServices;
 	}
 	
 	public void updateOrderDelivered(Orders o) {
-		OrdersDaoImpl.getInstance().updateOrderComplete(o);
+		return OrdersDaoImpl.getInstance().updateOrderComplete(o);
 	}
 }
