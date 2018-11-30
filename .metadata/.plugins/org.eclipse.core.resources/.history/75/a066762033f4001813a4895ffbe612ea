@@ -111,8 +111,6 @@ public class OrdersDaoImpl implements OrdersDao {
 		Orders nord = s.load(Orders.class, o.getOrder_id());
 		nord.setOrder_status("Delivered");
 		s.update(nord);
-		tx.commit();
-		s.close();
 		
 	}
 	

@@ -26,7 +26,7 @@ public class EventsController {
 		
 		Events e = new Events();
 		e.setCart_id(event.getCart_id());
-		e.setEvent_createddate(Calendar.getInstance().getTime());
+		e.setEvent_createddate(event.getEvent_createddate());
 		e.setRecur_id(event.getRecur_id());
 		e.setUser_id(event.getUser_id());
 		eventsServices.createEvent(e);

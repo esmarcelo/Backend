@@ -44,3 +44,10 @@
 0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:03:46 -0500] "GET /GroceryGoGetters/users HTTP/1.1" 200 1072
 0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:04:01 -0500] "GET /GroceryGoGetters/shoppingcarts/1 HTTP/1.1" 200 819
 127.0.0.1 - - [29/Nov/2018:17:09:42 -0500] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [29/Nov/2018:17:11:01 -0500] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:11:01 -0500] "POST /GroceryGoGetters/companies/createComapany HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [29/Nov/2018:17:14:51 -0500] "POST /GroceryGoGetters/companies/createCompany HTTP/1.1" 404 1047
+192.168.60.221 - - [29/Nov/2018:17:19:58 -0500] "GET /GroceryGoGetters/shoppingcarts/1 HTTP/1.1" 200 819
+192.168.60.221 - - [29/Nov/2018:17:19:58 -0500] "GET /favicon.ico HTTP/1.1" 404 1085
+192.168.60.221 - - [29/Nov/2018:18:40:20 -0500] "GET / HTTP/1.1" 404 1074
+192.168.60.221 - - [29/Nov/2018:18:40:20 -0500] "GET /HNAP1/ HTTP/1.1" 404 1084

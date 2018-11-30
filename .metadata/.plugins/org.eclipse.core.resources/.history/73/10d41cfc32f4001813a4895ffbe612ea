@@ -107,12 +107,8 @@ public class OrdersDaoImpl implements OrdersDao {
 	@Override
 	public void updateOrderComplete(Orders o) {
 		Session s = HibernateUtil.getSession();
-		Transaction tx = s.beginTransaction();
 		Orders nord = s.load(Orders.class, o.getOrder_id());
 		nord.setOrder_status("Delivered");
-		s.update(nord);
-		tx.commit();
-		s.close();
 		
 	}
 	
