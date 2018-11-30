@@ -75,9 +75,10 @@ public class OrdersDaoImpl implements OrdersDao {
 	@Override
 	public List<Orders> getOrdersByUserID(Users u) {
 		Session s = HibernateUtil.getSession();
-		String hql = "from Orders where USER_ID = :UID";
+		String hql = "from Orders where USER_ID = :UID and ORDER_STATUS != :ORST";
 		Query<Orders> scq = s.createQuery(hql,Orders.class);
 		scq.setParameter("UID",u.getUser_id());
+		scq.setParameter("ORST", "Delivered");
 		List<Orders> sc = scq.list();
 		s.close();
 		return sc;
@@ -86,10 +87,9 @@ public class OrdersDaoImpl implements OrdersDao {
 	@Override
 	public List<Orders> getOrdersByDriverID(Users u) {
 			Session s = HibernateUtil.getSession();
-			String hql = "from Orders where DRIVER_ID = :DID and ORDER_STATUS != :ORST";
+			String hql = "from Orders where DRIVER_ID = :DID";
 			Query<Orders> ocq = s.createQuery(hql, Orders.class);
 			ocq.setParameter("DID", u.getUser_id());
-			ocq.setParameter("ORST", "Delivered");
 			List<Orders> ordlst = ocq.list();
 			s.close();
 			return ordlst;
