@@ -1,0 +1,19 @@
+package com.grocerygogetters.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FeedBackService {
+
+private static FeedBackServices feedBackServices;
+	
+	private FeedBackServices() {
+	}
+	
+	public static UserServices getInstance() {
+		if (userServices == null) {
+			userServices = new UserServices();
+		}
+		return userServices;
+	}
+}
