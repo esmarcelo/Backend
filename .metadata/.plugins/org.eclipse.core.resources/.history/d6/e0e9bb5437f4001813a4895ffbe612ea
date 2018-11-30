@@ -23,9 +23,5 @@ public class ShoppingCartServices {
 		return ShoppingCartDaoImpl.getInstance().getShoppingCartById(id);
 	}
 	
-	public int createShoppingCart(ShoppingCart sc) {
-		return ShoppingCartDaoImpl.getInstance().createShoppingCart(sc);
-	}
-	
 	
 }

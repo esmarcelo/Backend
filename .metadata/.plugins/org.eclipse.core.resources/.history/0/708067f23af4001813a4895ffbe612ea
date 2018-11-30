@@ -31,8 +31,4 @@ private static LineItemsServices lineItemsServices;
 	public int createLineItem(LineItems li) {
 		return LineItemsDaoImpl.getInstance().createLineItem(li);
 	}
-	
-	public void deleteLineItemById(int id) {
-		LineItemsDaoImpl.getInstance().deleteLineItemById(id);
-	}
 }

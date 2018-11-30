@@ -1,7 +1,5 @@
 package com.grocerygogetters.services;
 
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 
 import com.grocerygogetters.dao.ProductsDaoImpl;
@@ -30,7 +28,7 @@ private static ProductsServices productsServices;
 		ProductsDaoImpl.getInstance().updateProduct(p);
 	}
 	
-	public List<Products> allProducts() {
-		return ProductsDaoImpl.getInstance().getProducts();
+	public void allProducts() {
+		ProductsDaoImpl.getInstance().getProducts();
 	}
 }

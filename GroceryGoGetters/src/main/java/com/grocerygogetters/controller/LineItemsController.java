@@ -32,5 +32,11 @@ public class LineItemsController {
 	public void createLineItem(@RequestBody LineItems li) {
 		lineItemsServices.createLineItem(li);
 	}
+	
+	@GetMapping("/deletLineItem/{id}")
+	@ResponseBody
+	public void deleLineItem(@PathVariable("id")int id) {
+		lineItemsServices.deleteLineItemById(id);
+	}
 
 }

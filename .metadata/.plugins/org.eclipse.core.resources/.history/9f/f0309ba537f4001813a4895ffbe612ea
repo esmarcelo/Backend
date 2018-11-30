@@ -30,6 +30,4 @@ public class ShoppingCartController {
 	public void createShoppingCart(@RequestBody ShoppingCart sc) {
 		shoppingCartServices.createShoppingCart(sc);
 	}
-	
-	
 }

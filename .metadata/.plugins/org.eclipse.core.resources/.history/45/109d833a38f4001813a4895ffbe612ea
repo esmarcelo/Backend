@@ -1,14 +1,12 @@
 package com.grocerygogetters.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import com.grocerygogetters.model.Companies;
 import com.grocerygogetters.model.Products;
 import com.grocerygogetters.services.ProductsServices;
 
@@ -20,8 +18,10 @@ public class ProductsController {
 	ProductsServices productsServices;
 	
 	@PostMapping("product/createProduct")
-	public void createProduct(@RequestBody Products prod) {
-
+	public void createProduct(@RequestBody Products prod/*@RequestParam("product_price")double prodPrice, @RequestParam("product_addeddate")Date date, 
+			@RequestParam("comp_id")int compid, @RequestParam("product_stock")int stock, @RequestParam("product_descr")String proddescr*/) {
+//		Companies com = new Companies();
+//		com.setComp_id(prod.getComp_id().getComp_id());
 		Products p = new Products();
 		p.setComp_id(prod.getComp_id());
 		p.setProduct_price(prod.getProduct_price());
@@ -36,10 +36,5 @@ public class ProductsController {
 	@PostMapping("product/updateProduct")
 	public void updateProduct(@RequestBody Products  prod) {
 		productsServices.updateProduct(prod);
-	}
-	
-	@GetMapping("allProducts")
-	public List<Products> allProducts() {
-		return productsServices.allProducts();
 	}
 }
