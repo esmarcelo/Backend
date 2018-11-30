@@ -75,10 +75,9 @@ public class OrdersDaoImpl implements OrdersDao {
 	@Override
 	public List<Orders> getOrdersByUserID(Users u) {
 		Session s = HibernateUtil.getSession();
-		String hql = "from Orders where USER_ID = :UID and ORDER_STATUS != :ORST";
+		String hql = "from Orders where USER_ID = :UID";
 		Query<Orders> scq = s.createQuery(hql,Orders.class);
 		scq.setParameter("UID",u.getUser_id());
-		scq.setParameter("ORST", "Delivered");
 		List<Orders> sc = scq.list();
 		s.close();
 		return sc;
