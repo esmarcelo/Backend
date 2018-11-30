@@ -38,7 +38,7 @@ public class ProductsController {
 		productsServices.updateProduct(prod);
 	}
 	
-	@GetMapping("/allProducts")
+	@GetMapping("allProducts")
 	public List<Products> allProducts() {
 		return productsServices.allProducts();
 	}
